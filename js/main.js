@@ -89,7 +89,6 @@
     if (parent) parent.appendChild(el);
     return el;
   };
-  const docY = (el) => el.getBoundingClientRect().top + scrollY;
   function lineY(el) {
     const rect = el.getBoundingClientRect();
     const lh = parseFloat(getComputedStyle(el).lineHeight) || rect.height;
@@ -100,7 +99,11 @@
     if (!svg) return;
     const small = innerWidth <= 760;
     geo = small ? { mainX: 16, laneX: 33, r: 5, w: 3, cw: 6.5 } : { mainX: 46, laneX: 94, r: 7, w: 4, cw: 9 };
-    const H = document.documentElement.scrollHeight;
+    // zera antes de medir: o próprio SVG não pode esticar a página
+    svg.style.height = '0px';
+    svg.setAttribute('height', 0);
+    const foot = $('.foot');
+    const H = foot ? foot.getBoundingClientRect().bottom + scrollY : document.documentElement.scrollHeight;
     svg.setAttribute('height', H);
     svg.setAttribute('viewBox', `0 0 ${small ? 46 : 128} ${H}`);
     svg.style.height = H + 'px';
@@ -132,7 +135,7 @@
       const mergeEl = $('[data-node="merge"]', art);
       const color = getComputedStyle(art).getPropertyValue('--lane').trim() || '#ffd23f';
       const forkY = lineY(forkEl);
-      const mergeY = docY(mergeEl);
+      const mergeY = lineY(mergeEl);
       const c = small ? 22 : 34;
       const d = `M ${mainX} ${forkY} C ${mainX} ${forkY + c}, ${laneX} ${forkY + c * 0.4}, ${laneX} ${forkY + c * 1.6} L ${laneX} ${mergeY - c * 1.6} C ${laneX} ${mergeY - c * 0.4}, ${mainX} ${mergeY - c}, ${mainX} ${mergeY}`;
       stroke(d, color);
@@ -159,9 +162,9 @@
 
     $$('[data-node]').forEach((el) => {
       const kind = el.dataset.node;
-      if (kind === 'head' || kind === 'merge') return;
+      if (kind === 'head') return;
       const art = el.closest('.proj');
-      if (kind === 'fork') addNode(el, mainX, lineY(el), '#f5f3ee');
+      if (kind === 'fork' || kind === 'merge') addNode(el, mainX, lineY(el), '#f5f3ee');
       else if (kind === 'branch') addNode(el, laneX, lineY(el), art ? art._lane : '#ffd23f');
       else if (kind === 'root') addNode(el, mainX, lineY(el), '#0a0f3d', 'root');
       else addNode(el, mainX, lineY(el), '#f5f3ee');
@@ -433,6 +436,23 @@ Frangão: do ovo ao galo → ${go('frangao')}`),
       if (key.startsWith('git ')) return print(`git: '${esc(cmd.slice(4))}' não é um comando que eu conheço. Tenta <b>git status</b>.`, 'err');
       print(`comando não encontrado: ${esc(cmd)}. Digite <b>help</b>.`, 'err');
     };
+
+    // ao aparecer, o terminal já digita um comando sozinho
+    const auto = new IntersectionObserver(async ([e]) => {
+      if (!e.isIntersecting) return;
+      auto.disconnect();
+      if (out.querySelector('.cmd')) return;
+      const text = 'git status';
+      for (let i = 1; i <= text.length; i++) {
+        input.value = text.slice(0, i);
+        await new Promise((r) => setTimeout(r, reduce ? 0 : 70));
+      }
+      await new Promise((r) => setTimeout(r, reduce ? 0 : 280));
+      run(input.value); input.value = '';
+      await new Promise((r) => setTimeout(r, reduce ? 0 : 700));
+      run('trajetoria');
+    }, { threshold: 0.5 });
+    auto.observe(term);
 
     form.addEventListener('submit', (e) => { e.preventDefault(); run(input.value); input.value = ''; });
     input.addEventListener('keydown', (e) => {

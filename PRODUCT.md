@@ -39,11 +39,11 @@ Projects confirmed from the repositories (live URLs from GitHub):
 - **Bram e as Cinzas de Vaelgrath**: card roguelite about grief and memory; pixel art drawn as character grids, VHS canvas scenery, music and SFX generated with Web Audio. Plain JS. https://jogotop-lovat.vercel.app
 - **Frangão**: calisthenics PWA, 7 programs, 52 animated exercises, XP/levels, mascot that evolves egg → legendary rooster, Supabase sync, tests with Vitest. React + TypeScript + Vite. https://frango-sand.vercel.app
 - **Banco do Murilo**: personal finance PWA, savings jars, statement import (OFX/CSV), offline-first, Supabase sync, Windows XP look. Plain JS. https://bancodomurilo.vercel.app
-- **Nexus**: site for the rock band Nexus: agenda, gallery, merch, online raffle with automatic Pix via Mercado Pago webhook, admin panel. HTML/JS + Vercel serverless + Supabase. https://nexus-rifa.vercel.app
+- **Nexus**: site for the rock band Nexus: agenda, gallery, merch, online raffle with automatic Pix via Mercado Pago webhook, admin panel. HTML/JS + Vercel serverless + Supabase. https://nexusband.com.br (código: github.com/parmurus1/Nexus)
 - **Arroz Dourado**: browser game over a holiday weekend, counting rice to pay a debt, multiple acts (kart, rhythm, fight, horror). Plain JS. https://arroz-omega.vercel.app
 - **Bacon Burguer**: showcase site for a burger house in Jardim Vergueiro, SP, sign-painter poster look. Static. https://baconburguer.vercel.app
 - **Grimório da Campanha (FichasTLP)**: RPG character sheet platform, wizard, dice rolls, master view. Next.js 15 + Supabase + Tailwind. https://tlp-blue.vercel.app
-- **Galeria CEAC**: photo/video gallery with admin uploads for a church community. JS + Supabase. https://galeria-ceac.vercel.app
+- **Galeria CEAC**: photo/video gallery with admin uploads for a church community. JS + Supabase. https://igrejaceac.vercel.app
 - **Fearless English**: one-page site for an English teacher. https://fearlessenglish.vercel.app
 - **Quintal do Murilo**: his sandbox, built with no AI help, Windows 7 start-menu navigation. https://quintal-do-murilo.vercel.app
 - **DataEllo**, **CameraPet**: school projects on GitHub Pages.

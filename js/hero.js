@@ -128,8 +128,8 @@
     canvas.width = Math.round(W * dpr);
     canvas.height = Math.round(H * dpr);
     const small = W < 760;
-    colW = small ? 26 : 34;
-    rowH = small ? 24 : 30;
+    colW = small ? 28 : 40;
+    rowH = small ? 28 : 36;
     cols = Math.floor(W / colW);
     firstCol = small ? 1 : Math.floor(cols * 0.32);
     seed();
@@ -140,11 +140,11 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, W, H);
     const small = W < 760;
-    const lw = small ? 2.2 : 3.2;
+    const lw = small ? 3.5 : 5.5;
 
     // ligações: contorno tinta e depois a cor
     for (let pass = 0; pass < 2; pass++) {
-      ctx.lineWidth = pass === 0 ? lw + 3.5 : lw;
+      ctx.lineWidth = pass === 0 ? lw + 4 : lw;
       ctx.lineCap = 'round';
       for (let i = 0; i < rows.length; i++) {
         const r = rows[i];
@@ -152,7 +152,7 @@
         for (const l of r.links) {
           const x1 = colX(l.from), x2 = colX(l.to);
           ctx.strokeStyle = pass === 0 ? INK : l.color;
-          ctx.globalAlpha = pass === 0 ? 0.6 : 0.9;
+          ctx.globalAlpha = 1;
           ctx.beginPath();
           ctx.moveTo(x1, y);
           if (x1 === x2) ctx.lineTo(x2, y + rowH);
@@ -170,7 +170,7 @@
       const r = rows[i];
       const y = i * rowH + offset - rowH;
       const x = colX(r.node);
-      let rad = small ? 4.5 : 6;
+      let rad = small ? 5.5 : 8;
       if (pointer.active) {
         const d = Math.hypot(pointer.x - x, pointer.y - y);
         rad += Math.max(0, 5 - d / 26);
@@ -178,7 +178,7 @@
       const age = r.born ? Math.max(0, Math.min(1, (now - r.born) / 500)) : 1;
       const s = r.born ? 1 - Math.pow(1 - age, 3) : 1;
       ctx.beginPath();
-      ctx.arc(x, y, rad * s + 2, 0, Math.PI * 2);
+      ctx.arc(x, y, rad * s + 2.5, 0, Math.PI * 2);
       ctx.fillStyle = INK;
       ctx.fill();
       ctx.beginPath();
@@ -187,7 +187,7 @@
       ctx.fill();
       if (r.label) {
         ctx.fillStyle = r.label === 'seu-commit' ? '#ffd23f' : 'rgba(188,196,246,0.5)';
-        ctx.fillText(r.label, x + 12, y);
+        ctx.fillText(r.label, x + 15, y);
       }
     }
   }
