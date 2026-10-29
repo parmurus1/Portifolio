@@ -15,7 +15,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>
+    document.documentElement.classList.add('js');
+    // intro de boot só na primeira visita da sessão, e nunca com movimento reduzido
+    try {
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !sessionStorage.getItem('booted')) document.documentElement.classList.add('booting');
+    } catch (_) {}
+  </script>
 </head>
 <body>
 <!--
@@ -27,6 +33,21 @@ FORM: canon (saída padrão escolhida pelo usuário), seed 516f1ec8 reroll 1.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 <a class="skip" href="#projetos">Pular para os projetos</a>
+
+<div class="boot" data-boot hidden>
+  <canvas class="boot__canvas" aria-hidden="true"></canvas>
+  <pre class="boot__log mono" aria-hidden="true" data-boot-log></pre>
+  <button class="boot__skip mono" type="button" data-boot-skip>Pular intro</button>
+</div>
+
+<div class="cursor" aria-hidden="true"><span class="cursor__ring"></span><span class="cursor__dot"></span></div>
+
+<svg class="fx-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <filter id="liquid" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.018" numOctaves="2" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" data-liquid/>
+  </filter>
+</svg>
 
 <svg width="0" height="0" class="sprite" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -44,7 +65,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </svg>
 
 <div class="bg" aria-hidden="true">
-  <div class="bg__grid"></div>
+  <canvas class="field" aria-hidden="true"></canvas>
   <div class="bg__aurora bg__aurora--a"></div>
   <div class="bg__aurora bg__aurora--b"></div>
   <div class="bg__spot"></div>
@@ -114,109 +135,118 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <p class="section__lede">Seis coisas que eu construí e que estão no ar. Clique e use.</p>
     </header>
 
-    <div class="bento">
-      <article class="card card--wide reveal" style="--accent: #5ec8ff">
-        <a class="card__shot" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img src="assets/shots/quintal.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
-        </a>
-        <div class="card__body">
-          <p class="card__tags mono"><span>Projeto autoral</span><span>100% sem IA</span></p>
-          <h3 class="card__title">Quintal do Murilo</h3>
-          <p class="card__desc">Meu laboratório de HTML, CSS e JavaScript, feito do zero só com o Google. Imita um sistema antigo: janelas arrastáveis, menu Iniciar com sons e player de música. O post sobre ele passou de <strong>116 mil impressões</strong> no LinkedIn.</p>
-          <ul class="card__stack mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <div class="card__links">
-            <a class="link" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener">Visitar <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-            <a class="link link--muted" href="https://github.com/parmurus1/QuintalDoMurilo" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
-          </div>
-        </div>
-      </article>
+    <div class="rail" data-rail>
+      <div class="rail__sticky">
+        <div class="bento">
+          <article class="card card--wide reveal" style="--accent: #5ec8ff">
+            <a class="card__shot" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/shots/quintal.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
+            </a>
+            <div class="card__body">
+              <p class="card__tags mono"><span>Projeto autoral</span><span>100% sem IA</span></p>
+              <h3 class="card__title">Quintal do Murilo</h3>
+              <p class="card__desc">Meu laboratório de HTML, CSS e JavaScript, feito do zero só com o Google. Imita um sistema antigo: janelas arrastáveis, menu Iniciar com sons e player de música. O post sobre ele passou de <strong>116 mil impressões</strong> no LinkedIn.</p>
+              <ul class="card__stack mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="card__links">
+                <a class="link" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener">Visitar <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+                <a class="link link--muted" href="https://github.com/parmurus1/QuintalDoMurilo" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+              </div>
+            </div>
+          </article>
 
-      <article class="card reveal" style="--accent: #ff5fa8">
-        <a class="card__shot" href="https://nexusband.com.br" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img src="assets/shots/nexus.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
-        </a>
-        <div class="card__body">
-          <p class="card__tags mono"><span>Freelance</span><span>Desde mar. 2026</span></p>
-          <h3 class="card__title">Nexus Band</h3>
-          <p class="card__desc">Site oficial da banda de rock: agenda, galeria, loja e rifa online com Pix que se confirma sozinho. Cuidei da estrutura, do design e da experiência; no back-end tive apoio de IA.</p>
-          <ul class="card__stack mono"><li>JavaScript</li><li>Node.js</li><li>Supabase</li><li>Mercado Pago</li></ul>
-          <div class="card__links">
-            <a class="link" href="https://nexusband.com.br" target="_blank" rel="noopener">Ver site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-            <a class="link link--muted" href="https://github.com/parmurus1/Nexus" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
-          </div>
-        </div>
-      </article>
+          <article class="card reveal" style="--accent: #ff5fa8">
+            <a class="card__shot" href="https://nexusband.com.br" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/shots/nexus.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
+            </a>
+            <div class="card__body">
+              <p class="card__tags mono"><span>Freelance</span><span>Desde mar. 2026</span></p>
+              <h3 class="card__title">Nexus Band</h3>
+              <p class="card__desc">Site oficial da banda de rock: agenda, galeria, loja e rifa online com Pix que se confirma sozinho. Cuidei da estrutura, do design e da experiência; no back-end tive apoio de IA.</p>
+              <ul class="card__stack mono"><li>JavaScript</li><li>Node.js</li><li>Supabase</li><li>Mercado Pago</li></ul>
+              <div class="card__links">
+                <a class="link" href="https://nexusband.com.br" target="_blank" rel="noopener">Ver site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+                <a class="link link--muted" href="https://github.com/parmurus1/Nexus" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+              </div>
+            </div>
+          </article>
 
-      <article class="card reveal" style="--accent: #ff8a4c">
-        <a class="card__shot" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img src="assets/shots/bram.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
-        </a>
-        <div class="card__body">
-          <p class="card__tags mono"><span>Jogo</span><span>Roguelite de cartas</span></p>
-          <h3 class="card__title">Bram e as Cinzas de Vaelgrath</h3>
-          <p class="card__desc">Roguelite de cartas sobre luto e memória. Pixel art desenhada em código, trilha e efeitos gerados com Web Audio e 8,5 mil linhas de JavaScript puro, sem engine.</p>
-          <ul class="card__stack mono"><li>JavaScript</li><li>Canvas</li><li>Web Audio</li></ul>
-          <div class="card__links">
-            <a class="link" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener">Jogar <svg class="i"><use href="#i-play"/></svg><span class="sr">(abre em nova aba)</span></a>
-            <a class="link link--muted" href="https://github.com/parmurus1/Bram-Cinzas" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
-          </div>
-        </div>
-      </article>
+          <article class="card reveal" style="--accent: #ff8a4c">
+            <a class="card__shot" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/shots/bram.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
+            </a>
+            <div class="card__body">
+              <p class="card__tags mono"><span>Jogo</span><span>Roguelite de cartas</span></p>
+              <h3 class="card__title">Bram e as Cinzas de Vaelgrath</h3>
+              <p class="card__desc">Roguelite de cartas sobre luto e memória. Pixel art desenhada em código, trilha e efeitos gerados com Web Audio e 8,5 mil linhas de JavaScript puro, sem engine.</p>
+              <ul class="card__stack mono"><li>JavaScript</li><li>Canvas</li><li>Web Audio</li></ul>
+              <div class="card__links">
+                <a class="link" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener">Jogar <svg class="i"><use href="#i-play"/></svg><span class="sr">(abre em nova aba)</span></a>
+                <a class="link link--muted" href="https://github.com/parmurus1/Bram-Cinzas" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+              </div>
+            </div>
+          </article>
 
-      <article class="card reveal" style="--accent: #ffc83d">
-        <a class="card__shot card__shot--art" href="https://frango-sand.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <span class="frango">
-            <img class="frango__mascot" src="assets/shots/frangao-mascote.svg" width="512" height="512" loading="lazy" alt="">
-            <span class="frango__panel">
-              <span class="frango__level mono">Nível <b data-frango-level>1</b></span>
-              <span class="frango__stage" data-frango-stage>Ovo</span>
-              <span class="frango__xp"><span data-frango-xp></span></span>
-            </span>
-          </span>
-        </a>
-        <div class="card__body">
-          <p class="card__tags mono"><span>App (PWA)</span><span>Calistenia</span></p>
-          <h3 class="card__title">Frangão</h3>
-          <p class="card__desc">Treinos guiados em casa, sem equipamento, com 52 exercícios animados, voz do treinador, XP, missões e um mascote que evolui do ovo ao Galo Lendário.</p>
-          <ul class="card__stack mono"><li>React</li><li>TypeScript</li><li>Supabase</li><li>Vitest</li></ul>
-          <div class="card__links">
-            <a class="link" href="https://frango-sand.vercel.app" target="_blank" rel="noopener">Abrir app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-            <a class="link link--muted" href="https://github.com/parmurus1/Frango" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
-          </div>
-        </div>
-      </article>
+          <article class="card reveal" style="--accent: #ffc83d">
+            <a class="card__shot card__shot--art" href="https://frango-sand.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <span class="frango">
+                <img class="frango__mascot" src="assets/shots/frangao-mascote.svg" width="512" height="512" loading="lazy" alt="">
+                <span class="frango__panel">
+                  <span class="frango__level mono">Nível <b data-frango-level>1</b></span>
+                  <span class="frango__stage" data-frango-stage>Ovo</span>
+                  <span class="frango__xp"><span data-frango-xp></span></span>
+                </span>
+              </span>
+            </a>
+            <div class="card__body">
+              <p class="card__tags mono"><span>App (PWA)</span><span>Calistenia</span></p>
+              <h3 class="card__title">Frangão</h3>
+              <p class="card__desc">Treinos guiados em casa, sem equipamento, com 52 exercícios animados, voz do treinador, XP, missões e um mascote que evolui do ovo ao Galo Lendário.</p>
+              <ul class="card__stack mono"><li>React</li><li>TypeScript</li><li>Supabase</li><li>Vitest</li></ul>
+              <div class="card__links">
+                <a class="link" href="https://frango-sand.vercel.app" target="_blank" rel="noopener">Abrir app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+                <a class="link link--muted" href="https://github.com/parmurus1/Frango" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+              </div>
+            </div>
+          </article>
 
-      <article class="card reveal" style="--accent: #4ade80">
-        <a class="card__shot" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img src="assets/shots/banco.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
-        </a>
-        <div class="card__body">
-          <p class="card__tags mono"><span>App (PWA)</span><span>Finanças</span></p>
-          <h3 class="card__title">Banco do Murilo</h3>
-          <p class="card__desc">Meu banco particular: gastos, potes com metas, importação de extrato OFX/CSV e funciona offline. Uso todo dia, com cara de Windows XP do jeito que eu queria.</p>
-          <ul class="card__stack mono"><li>JavaScript</li><li>Service Worker</li><li>Supabase</li></ul>
-          <div class="card__links">
-            <a class="link" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener">Abrir app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-            <a class="link link--muted" href="https://github.com/parmurus1/Bancodomurilo" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
-          </div>
-        </div>
-      </article>
+          <article class="card reveal" style="--accent: #4ade80">
+            <a class="card__shot" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/shots/banco.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
+            </a>
+            <div class="card__body">
+              <p class="card__tags mono"><span>App (PWA)</span><span>Finanças</span></p>
+              <h3 class="card__title">Banco do Murilo</h3>
+              <p class="card__desc">Meu banco particular: gastos, potes com metas, importação de extrato OFX/CSV e funciona offline. Uso todo dia, com cara de Windows XP do jeito que eu queria.</p>
+              <ul class="card__stack mono"><li>JavaScript</li><li>Service Worker</li><li>Supabase</li></ul>
+              <div class="card__links">
+                <a class="link" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener">Abrir app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+                <a class="link link--muted" href="https://github.com/parmurus1/Bancodomurilo" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+              </div>
+            </div>
+          </article>
 
-      <article class="card card--wide card--flip reveal" style="--accent: #c4a5ff">
-        <a class="card__shot" href="https://baconburguer.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img src="assets/shots/bacon.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
-        </a>
-        <div class="card__body">
-          <p class="card__tags mono"><span>Site</span><span>Hamburgueria</span></p>
-          <h3 class="card__title">Bacon Burguer</h3>
-          <p class="card__desc">Site vitrine com cara de cartaz de letrista: placa de aberto/fechado que segue o horário, cardápio em abas e barra de pedido no celular.</p>
-          <ul class="card__stack mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <div class="card__links">
-            <a class="link" href="https://baconburguer.vercel.app" target="_blank" rel="noopener">Ver site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-            <a class="link link--muted" href="https://github.com/parmurus1/BaconBurguer" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
-          </div>
+          <article class="card card--wide card--flip reveal" style="--accent: #c4a5ff">
+            <a class="card__shot" href="https://baconburguer.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="assets/shots/bacon.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
+            </a>
+            <div class="card__body">
+              <p class="card__tags mono"><span>Site</span><span>Hamburgueria</span></p>
+              <h3 class="card__title">Bacon Burguer</h3>
+              <p class="card__desc">Site vitrine com cara de cartaz de letrista: placa de aberto/fechado que segue o horário, cardápio em abas e barra de pedido no celular.</p>
+              <ul class="card__stack mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="card__links">
+                <a class="link" href="https://baconburguer.vercel.app" target="_blank" rel="noopener">Ver site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+                <a class="link link--muted" href="https://github.com/parmurus1/BaconBurguer" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+              </div>
+            </div>
+          </article>
         </div>
-      </article>
+      <div class="rail__meta mono" aria-hidden="true">
+          <span data-rail-count>01 / 06</span>
+          <span class="rail__bar"><span data-rail-bar></span></span>
+          <span>role para navegar</span>
+        </div>
+      </div>
     </div>
 
     <h3 class="more__title reveal">Outros projetos</h3>
@@ -326,6 +356,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <p class="mono">Feito com HTML, CSS e JavaScript</p>
 </footer>
 
+<script src="js/fx.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

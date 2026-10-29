@@ -10,7 +10,17 @@
   const wait = (ms) => new Promise((r) => setTimeout(r, reduce ? 0 : ms));
 
   /* ---------------- entrada ---------------- */
-  requestAnimationFrame(() => setTimeout(() => document.documentElement.classList.add('is-ready'), reduce ? 0 : 120));
+  // a intro de boot (fx.js) segura a entrada até terminar
+  const start = () => {
+    document.documentElement.classList.add('is-ready');
+    typeCode();
+  };
+  if (document.documentElement.classList.contains('booting')) {
+    addEventListener('boot:done', start, { once: true });
+    // rede de segurança caso a intro não rode
+    setTimeout(() => { if (!document.documentElement.classList.contains('is-ready')) { document.documentElement.classList.remove('booting'); start(); } }, 9000);
+  }
+  else requestAnimationFrame(() => setTimeout(start, reduce ? 0 : 120));
 
   /* ---------------- nav ---------------- */
   const nav = $('[data-nav]');
@@ -77,7 +87,7 @@
   async function typeCode() {
     if (!codeEl) return;
     if (reduce) { codeEl.innerHTML = CODE.map((l) => `<span class="ln">${renderLine(l)}</span>`).join(''); return; }
-    await wait(900);
+    await wait(700);
     for (const line of CODE) {
       const ln = document.createElement('span');
       ln.className = 'ln';
@@ -102,8 +112,6 @@
     caret.className = 'caret';
     last.appendChild(caret);
   }
-  typeCode();
-
   /* ---------------- status: último push no GitHub ---------------- */
   (async () => {
     const out = $('[data-status]');
@@ -209,6 +217,7 @@
   <b>linkedin</b>        abre meu LinkedIn
   <b>sudo contratar</b>  você sabe o que faz
   <b>frango</b>          ???
+  <b>matrix</b>          não aperte
   <b>clear</b>           limpa a tela`),
       sobre: () => print('Murilo Neves Teixeira. Dev front-end e estudante de Informática no Senac SP.\nFaço jogos, apps e sites do começo ao fim. Procurando Jovem Aprendiz ou estágio em TI.'),
       projetos: () => print(
@@ -248,6 +257,7 @@ Frangão: do ovo ao galo → <a href="https://frango-sand.vercel.app" target="_b
       ls: () => print('projetos/  sobre.md  trajetoria.log  contato.txt'),
       date: () => print(new Date().toLocaleString('pt-BR', { dateStyle: 'full', timeStyle: 'short' })),
       'rm -rf /': () => print('nada disso por aqui.', 'err'),
+      matrix: () => { print('acordando…', 'dim'); window.__matrix && window.__matrix(); },
       clear: () => { out.innerHTML = ''; },
     };
     const ALIASES = { ajuda: 'help', '?': 'help', 'sudo hire': 'sudo contratar', trajetória: 'trajetoria', 'cat sobre.md': 'sobre', 'cat contato.txt': 'contato', 'cat trajetoria.log': 'trajetoria', cls: 'clear' };
