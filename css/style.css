@@ -297,7 +297,7 @@ strong { font-weight: 700; }
   .hero { padding-right: 16px; align-items: center; }
   .hero__veil {
     background:
-      linear-gradient(180deg, var(--ground) 0%, rgba(20, 29, 138, 0.55) 22%, rgba(20, 29, 138, 0.8) 55%, var(--ground) 100%);
+      linear-gradient(180deg, var(--ground) 0%, rgba(20, 29, 138, 0.35) 7%, rgba(20, 29, 138, 0.88) 14%, rgba(20, 29, 138, 0.9) 86%, var(--ground) 100%);
   }
   .hero__hint { display: none; }
   .hero__actions .btn { flex: 1 1 auto; justify-content: center; }

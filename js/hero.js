@@ -134,6 +134,7 @@
     firstCol = small ? 1 : Math.floor(cols * 0.32);
     seed();
     draw(performance.now());
+    drawLabels();
   }
 
   function draw(now) {
@@ -164,8 +165,6 @@
 
     // commits
     ctx.globalAlpha = 1;
-    ctx.font = `500 ${small ? 9 : 10.5}px "Martian Mono", ui-monospace, monospace`;
-    ctx.textBaseline = 'middle';
     for (let i = 0; i < rows.length; i++) {
       const r = rows[i];
       const y = i * rowH + offset - rowH;
@@ -185,10 +184,26 @@
       ctx.arc(x, y, rad * s, 0, Math.PI * 2);
       ctx.fillStyle = r.nodeColor;
       ctx.fill();
-      if (r.label) {
-        ctx.fillStyle = r.label === 'seu-commit' ? '#ffd23f' : 'rgba(188,196,246,0.5)';
-        ctx.fillText(r.label, x + 15, y);
-      }
+    }
+  }
+
+  /* rótulos por último, sobre uma pílula tinta, para nenhuma lane cortar */
+  function drawLabels() {
+    if (small()) return;
+    ctx.font = '500 10.5px "Martian Mono", ui-monospace, monospace';
+    ctx.textBaseline = 'middle';
+    for (let i = 0; i < rows.length; i++) {
+      const r = rows[i];
+      if (!r.label) continue;
+      const y = i * rowH + offset - rowH;
+      const x = colX(r.node) + 15;
+      const w = ctx.measureText(r.label).width + 12;
+      ctx.fillStyle = INK;
+      ctx.beginPath();
+      ctx.roundRect(x - 6, y - 9, w, 18, 9);
+      ctx.fill();
+      ctx.fillStyle = r.label === 'seu-commit' ? '#ffd23f' : 'rgba(188,196,246,0.85)';
+      ctx.fillText(r.label, x, y + 0.5);
     }
   }
 
@@ -203,6 +218,7 @@
       if (rows.length > Math.ceil(H / rowH) + 4) rows.pop();
     }
     draw(now);
+    drawLabels();
     requestAnimationFrame(tick);
   }
 
@@ -223,7 +239,7 @@
     const r = canvas.getBoundingClientRect();
     const col = Math.floor((e.clientX - r.left) / colW);
     forced = { col: Math.max(firstCol, Math.min(cols - 1, col)) };
-    if (reduce) { rows.unshift(makeRow()); rows.pop(); draw(performance.now()); }
+    if (reduce) { rows.unshift(makeRow()); rows.pop(); draw(performance.now()); drawLabels(); }
   });
 
   new IntersectionObserver(([entry]) => (entry.isIntersecting ? start() : stop())).observe(hero);
@@ -232,5 +248,5 @@
   window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(resize, 150); });
 
   resize();
-  if (document.fonts) document.fonts.ready.then(() => draw(performance.now()));
+  if (document.fonts) document.fonts.ready.then(() => { draw(performance.now()); drawLabels(); });
 })();
