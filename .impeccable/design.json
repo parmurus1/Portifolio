@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T18:38:11+00:00",
+  "title": "Design System: Murilo Neves Teixeira · Portfólio",
+  "extensions": {
+    "colorMeta": {
+      "electric-indigo": {
+        "role": "primary",
+        "displayName": "Electric Indigo",
+        "canonical": "oklch(68.1% 0.169 275.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.108 275.0)",
+          "oklch(26.4% 0.126 275.0)",
+          "oklch(37.9% 0.143 275.0)",
+          "oklch(49.3% 0.160 275.0)",
+          "oklch(60.7% 0.169 275.0)",
+          "oklch(72.1% 0.169 275.0)",
+          "oklch(83.6% 0.165 275.0)",
+          "oklch(95.0% 0.148 275.0)"
+        ]
+      },
+      "trophy-gold": {
+        "role": "secondary",
+        "displayName": "Trophy Gold",
+        "canonical": "oklch(85.9% 0.158 85.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 85.8)",
+          "oklch(26.4% 0.093 85.8)",
+          "oklch(37.9% 0.110 85.8)",
+          "oklch(49.3% 0.126 85.8)",
+          "oklch(60.7% 0.142 85.8)",
+          "oklch(72.1% 0.158 85.8)",
+          "oklch(83.6% 0.158 85.8)",
+          "oklch(95.0% 0.158 85.8)"
+        ]
+      },
+      "signal-green": {
+        "role": "tertiary",
+        "displayName": "Signal Green",
+        "canonical": "oklch(80.0% 0.182 151.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.095 151.7)",
+          "oklch(26.4% 0.114 151.7)",
+          "oklch(37.9% 0.133 151.7)",
+          "oklch(49.3% 0.152 151.7)",
+          "oklch(60.7% 0.170 151.7)",
+          "oklch(72.1% 0.182 151.7)",
+          "oklch(83.6% 0.182 151.7)",
+          "oklch(95.0% 0.178 151.7)"
+        ]
+      },
+      "aurora-indigo": {
+        "role": "atmosphere",
+        "displayName": "Aurora Indigo",
+        "canonical": "oklch(51.1% 0.230 277.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.175 277.0)",
+          "oklch(26.4% 0.199 277.0)",
+          "oklch(37.9% 0.223 277.0)",
+          "oklch(49.3% 0.230 277.0)",
+          "oklch(60.7% 0.230 277.0)",
+          "oklch(72.1% 0.206 277.0)",
+          "oklch(83.6% 0.183 277.0)",
+          "oklch(95.0% 0.159 277.0)"
+        ]
+      },
+      "aurora-teal": {
+        "role": "atmosphere",
+        "displayName": "Aurora Teal",
+        "canonical": "oklch(52.0% 0.094 223.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.082 223.1)",
+          "oklch(26.4% 0.092 223.1)",
+          "oklch(37.9% 0.094 223.1)",
+          "oklch(49.3% 0.094 223.1)",
+          "oklch(60.7% 0.094 223.1)",
+          "oklch(72.1% 0.094 223.1)",
+          "oklch(83.6% 0.087 223.1)",
+          "oklch(95.0% 0.077 223.1)"
+        ]
+      },
+      "deep-black": {
+        "role": "neutral",
+        "displayName": "Deep Black",
+        "canonical": "oklch(14.1% 0.004 285.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.004 285.8)",
+          "oklch(26.4% 0.004 285.8)",
+          "oklch(37.9% 0.004 285.8)",
+          "oklch(49.3% 0.004 285.8)",
+          "oklch(60.7% 0.004 285.8)",
+          "oklch(72.1% 0.004 285.8)",
+          "oklch(83.6% 0.004 285.8)",
+          "oklch(95.0% 0.004 285.8)"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "oklch(17.9% 0.006 285.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 285.8)",
+          "oklch(26.4% 0.006 285.8)",
+          "oklch(37.9% 0.006 285.8)",
+          "oklch(49.3% 0.006 285.8)",
+          "oklch(60.7% 0.006 285.8)",
+          "oklch(72.1% 0.006 285.8)",
+          "oklch(83.6% 0.006 285.8)",
+          "oklch(95.0% 0.006 285.8)"
+        ]
+      },
+      "graphite-raised": {
+        "role": "neutral",
+        "displayName": "Raised Graphite",
+        "canonical": "oklch(20.6% 0.008 285.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.008 285.7)",
+          "oklch(26.4% 0.008 285.7)",
+          "oklch(37.9% 0.008 285.7)",
+          "oklch(49.3% 0.008 285.7)",
+          "oklch(60.7% 0.008 285.7)",
+          "oklch(72.1% 0.008 285.7)",
+          "oklch(83.6% 0.008 285.7)",
+          "oklch(95.0% 0.008 285.7)"
+        ]
+      },
+      "zinc-white": {
+        "role": "neutral",
+        "displayName": "Zinc White",
+        "canonical": "oklch(96.7% 0.001 286.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.001 286.4)",
+          "oklch(26.4% 0.001 286.4)",
+          "oklch(37.9% 0.001 286.4)",
+          "oklch(49.3% 0.001 286.4)",
+          "oklch(60.7% 0.001 286.4)",
+          "oklch(72.1% 0.001 286.4)",
+          "oklch(83.6% 0.001 286.4)",
+          "oklch(95.0% 0.001 286.4)"
+        ]
+      },
+      "zinc-muted": {
+        "role": "neutral",
+        "displayName": "Muted Zinc",
+        "canonical": "oklch(71.2% 0.013 286.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.013 286.1)",
+          "oklch(26.4% 0.013 286.1)",
+          "oklch(37.9% 0.013 286.1)",
+          "oklch(49.3% 0.013 286.1)",
+          "oklch(60.7% 0.013 286.1)",
+          "oklch(72.1% 0.013 286.1)",
+          "oklch(83.6% 0.013 286.1)",
+          "oklch(95.0% 0.013 286.1)"
+        ]
+      },
+      "zinc-faint": {
+        "role": "neutral",
+        "displayName": "Faint Zinc",
+        "canonical": "oklch(64.0% 0.015 286.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.015 286.0)",
+          "oklch(26.4% 0.015 286.0)",
+          "oklch(37.9% 0.015 286.0)",
+          "oklch(49.3% 0.015 286.0)",
+          "oklch(60.7% 0.015 286.0)",
+          "oklch(72.1% 0.015 286.0)",
+          "oklch(83.6% 0.015 286.0)",
+          "oklch(95.0% 0.015 286.0)"
+        ]
+      },
+      "separator-graphite": {
+        "role": "neutral",
+        "displayName": "Separator Graphite",
+        "canonical": "oklch(37.0% 0.012 285.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.012 285.8)",
+          "oklch(26.4% 0.012 285.8)",
+          "oklch(37.9% 0.012 285.8)",
+          "oklch(49.3% 0.012 285.8)",
+          "oklch(60.7% 0.012 285.8)",
+          "oklch(72.1% 0.012 285.8)",
+          "oklch(83.6% 0.012 285.8)",
+          "oklch(95.0% 0.012 285.8)"
+        ]
+      },
+      "gutter-gray": {
+        "role": "neutral",
+        "displayName": "Gutter Gray",
+        "canonical": "oklch(44.2% 0.015 285.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.015 285.8)",
+          "oklch(26.4% 0.015 285.8)",
+          "oklch(37.9% 0.015 285.8)",
+          "oklch(49.3% 0.015 285.8)",
+          "oklch(60.7% 0.015 285.8)",
+          "oklch(72.1% 0.015 285.8)",
+          "oklch(83.6% 0.015 285.8)",
+          "oklch(95.0% 0.015 285.8)"
+        ]
+      },
+      "indigo-wash": {
+        "role": "primary",
+        "displayName": "Indigo Wash",
+        "canonical": "oklch(68.1% 0.169 275.0 / 0.16)",
+        "tonalRamp": [
+          "oklch(15.0% 0.108 275.0)",
+          "oklch(26.4% 0.126 275.0)",
+          "oklch(37.9% 0.143 275.0)",
+          "oklch(49.3% 0.160 275.0)",
+          "oklch(60.7% 0.169 275.0)",
+          "oklch(72.1% 0.169 275.0)",
+          "oklch(83.6% 0.165 275.0)",
+          "oklch(95.0% 0.148 275.0)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(100% 0 0 / 0.08)",
+        "tonalRamp": [
+          "oklch(100% 0 0 / 0.02)",
+          "oklch(100% 0 0 / 0.03)",
+          "oklch(100% 0 0 / 0.05)",
+          "oklch(100% 0 0 / 0.07)",
+          "oklch(100% 0 0 / 0.08)",
+          "oklch(100% 0 0 / 0.14)",
+          "oklch(100% 0 0 / 0.20)",
+          "oklch(100% 0 0 / 0.28)"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "oklch(100% 0 0 / 0.14)",
+        "tonalRamp": [
+          "oklch(100% 0 0 / 0.02)",
+          "oklch(100% 0 0 / 0.03)",
+          "oklch(100% 0 0 / 0.05)",
+          "oklch(100% 0 0 / 0.07)",
+          "oklch(100% 0 0 / 0.08)",
+          "oklch(100% 0 0 / 0.14)",
+          "oklch(100% 0 0 / 0.20)",
+          "oklch(100% 0 0 / 0.28)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero name only, two lines, second line in Muted Zinc; lines rise out of a clipping mask on load."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; the contact question runs one step larger (up to 3.6rem)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project card titles (wide cards scale to clamp(1.7rem, 2.6vw, 2.2rem)); timeline and sub-list titles in the same register at 600."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero lede and section ledes in Muted Zinc, max 34 to 40rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose in Muted Zinc; strong lifts to 600 Zinc White."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons and text links."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Code, terminal, dates, stack lists, tags, status bar, marquee. Never headings or prose."
+      }
+    },
+    "shadows": [
+      {
+        "name": "window",
+        "value": "0 1px 0 rgba(255,255,255,0.04) inset, 0 24px 60px -24px rgba(0,0,0,0.7)",
+        "purpose": "Editor and terminal windows, the two objects that float at rest."
+      },
+      {
+        "name": "editor-glow",
+        "value": "0 0 80px -30px rgba(124,140,255,0.45)",
+        "purpose": "Added to window on the hero code editor only."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 30px 60px -30px rgba(0,0,0,0.9)",
+        "purpose": "Project cards on hover, with a 4px rise."
+      },
+      {
+        "name": "nav-float",
+        "value": "0 10px 30px -14px rgba(0,0,0,0.8)",
+        "purpose": "Nav pill after 24px of scroll, with blur(14px) saturate(140%) backdrop."
+      },
+      {
+        "name": "primary-hover-ring",
+        "value": "0 0 0 4px rgba(124,140,255,0.16), 0 10px 30px -10px rgba(124,140,255,0.6)",
+        "purpose": "Near-white primary button on hover."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-house",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Every transform, reveal and lift."
+      },
+      {
+        "name": "duration-state",
+        "value": "0.2s to 0.35s",
+        "purpose": "Color, border, background and icon nudges."
+      },
+      {
+        "name": "duration-lift",
+        "value": "0.4s to 0.6s",
+        "purpose": "Card and row lifts, glow fades, editor tilt return."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 0 to 1, translate 24px to 0, blur 4px to 0 over 0.9s; siblings staggered 0.08s (mod 3)",
+        "purpose": "Scroll entrance for section heads, cards, rows, timeline entries, skill groups."
+      },
+      {
+        "name": "hero-entrance",
+        "value": "name lines rise 105% to 0 over 1s (second line +0.08s); role, lede, actions, badge, facts, editor fade from 16px and 6px blur over 0.9s at 0.25s to 0.55s",
+        "purpose": "First-viewport load sequence."
+      },
+      {
+        "name": "aurora-drift",
+        "value": "18s and 22s ease-in-out infinite alternate",
+        "purpose": "Backdrop blobs."
+      },
+      {
+        "name": "marquee",
+        "value": "38s linear infinite, pauses on hover",
+        "purpose": "Tech ribbon."
+      },
+      {
+        "name": "status-ping",
+        "value": "2s ring expanding to 8px",
+        "purpose": "Availability dot."
+      },
+      {
+        "name": "caret-blink",
+        "value": "1s steps(1) infinite",
+        "purpose": "Editor caret."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition durations to 0.001ms; finished states shown",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "400px"
+      },
+      {
+        "name": "sm",
+        "value": "520px"
+      },
+      {
+        "name": "md",
+        "value": "760px"
+      },
+      {
+        "name": "md-grid",
+        "value": "860px"
+      },
+      {
+        "name": "lg-split",
+        "value": "900px"
+      },
+      {
+        "name": "lg-hero",
+        "value": "960px"
+      },
+      {
+        "name": "container",
+        "value": "1160px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Near-white pill for the main action; brightens and gains an indigo ring on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Ver projetos <svg class=\"ds-i\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 0.55em; min-height: 46px; padding: 0 1.25rem; border-radius: 999px; background: var(--text, #f4f4f5); color: #09090b; font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; font-weight: 550; font-size: 0.97rem; letter-spacing: -0.005em; text-decoration: none; border: 1px solid transparent; transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), background 0.25s, box-shadow 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary .ds-i { transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary:hover { background: #fff; box-shadow: 0 0 0 4px var(--accent-soft, rgba(124,140,255,0.16)), 0 10px 30px -10px rgba(124,140,255,0.6); } .ds-btn-primary:hover .ds-i { transform: translateX(3px); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #7c8cff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Translucent hairline pill for the secondary action.",
+      "html": "<button class=\"ds-btn-ghost\" type=\"button\">Falar comigo</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 0.55em; min-height: 46px; padding: 0 1.25rem; border-radius: 999px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-strong, rgba(255,255,255,0.14)); color: var(--text, #f4f4f5); font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; font-weight: 550; font-size: 0.97rem; cursor: pointer; transition: background 0.25s, border-color 0.25s, transform 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.28); } .ds-btn-ghost:active { transform: scale(0.97); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--accent, #7c8cff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation Pill",
+      "kind": "nav",
+      "refersTo": "nav-bar-scrolled",
+      "description": "Fixed glass pill (scrolled state): logo tile, muted links with an active pill, Contact button.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-brand\" href=\"#\"><span class=\"ds-nav-logo\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"m9 8-4 4 4 4M15 8l4 4-4 4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span>Murilo Teixeira</a><span class=\"ds-nav-links\"><a href=\"#\" aria-current=\"true\">Projetos</a><a href=\"#\">Sobre</a><a href=\"#\">Stack</a></span><a class=\"ds-nav-cta\" href=\"#\">Contato</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 24px; height: 60px; padding: 0 10px 0 18px; border-radius: 999px; background: rgba(17,17,20,0.72); border: 1px solid var(--border, rgba(255,255,255,0.08)); backdrop-filter: blur(14px) saturate(140%); box-shadow: 0 10px 30px -14px rgba(0,0,0,0.8); font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; color: var(--text, #f4f4f5); } .ds-nav-brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: -0.01em; color: inherit; text-decoration: none; } .ds-nav-logo { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: var(--surface-2, #17171b); border: 1px solid var(--border-strong, rgba(255,255,255,0.14)); color: var(--accent, #7c8cff); } .ds-nav-links { display: flex; gap: 4px; margin-left: auto; } .ds-nav-links a { padding: 8px 14px; border-radius: 999px; font-size: 0.92rem; color: var(--muted, #a1a1aa); text-decoration: none; transition: color 0.2s, background 0.2s; } .ds-nav-links a:hover { color: var(--text, #f4f4f5); } .ds-nav-links a[aria-current=\"true\"] { color: var(--text, #f4f4f5); background: rgba(255,255,255,0.07); } .ds-nav a:focus-visible { outline: 2px solid var(--accent, #7c8cff); outline-offset: 3px; border-radius: 8px; } .ds-nav-cta { display: inline-flex; align-items: center; min-height: 38px; padding: 0 1rem; border-radius: 999px; background: var(--text, #f4f4f5); color: #09090b; font-weight: 550; font-size: 0.9rem; text-decoration: none; } .ds-nav-cta:hover { background: #fff; box-shadow: 0 0 0 4px var(--accent-soft, rgba(124,140,255,0.16)); }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card-project",
+      "description": "Graphite card with a concentric 16:10 screenshot frame, title, description, mono stack and link pair; border lights up in the project's own hue on hover.",
+      "html": "<article class=\"ds-card\" style=\"--accent:#5ec8ff\"><div class=\"ds-card-shot\"></div><div class=\"ds-card-body\"><h3 class=\"ds-card-title\">Quintal do Murilo</h3><p class=\"ds-card-desc\">Laboratório de HTML, CSS e JavaScript feito do zero: janelas arrastáveis e menu Iniciar com sons.</p><ul class=\"ds-card-stack\"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class=\"ds-card-links\"><a class=\"ds-link\" href=\"#\">Visitar <svg class=\"ds-i\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8.5 7H17v8.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a><a class=\"ds-link ds-link-muted\" href=\"#\">Código</a></div></div></article>",
+      "css": ".ds-card { position: relative; display: flex; flex-direction: column; max-width: 520px; border-radius: 20px; background: var(--surface, #111114); border: 1px solid var(--border, rgba(255,255,255,0.08)); overflow: hidden; font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; color: var(--text, #f4f4f5); transition: border-color 0.3s, translate 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.5s cubic-bezier(0.16,1,0.3,1); } .ds-card:hover { translate: 0 -4px; border-color: color-mix(in srgb, var(--accent) 55%, transparent); box-shadow: 0 30px 60px -30px rgba(0,0,0,0.9); } .ds-card-shot { margin: 12px 12px 0; aspect-ratio: 16 / 10; border-radius: 12px; border: 1px solid var(--border, rgba(255,255,255,0.08)); background: radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 60%), var(--surface-2, #17171b); } .ds-card-body { padding: 22px 24px 24px; } .ds-card-title { margin: 0; font-size: 1.45rem; font-weight: 650; letter-spacing: -0.025em; line-height: 1.2; } .ds-card-desc { margin: 10px 0 0; color: var(--muted, #a1a1aa); font-size: 0.98rem; line-height: 1.6; } .ds-card-stack { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 16px 0 0; padding: 0; font-family: \"Geist Mono\", ui-monospace, Menlo, monospace; font-size: 0.76rem; color: var(--faint, #8b8b95); } .ds-card-links { display: flex; gap: 22px; padding-top: 20px; } .ds-link { display: inline-flex; align-items: center; gap: 0.4em; font-weight: 550; font-size: 0.95rem; color: var(--text, #f4f4f5); text-decoration: none; padding-bottom: 2px; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 0.35s cubic-bezier(0.16,1,0.3,1), color 0.25s; } .ds-link:hover { background-size: 100% 1px; } .ds-link-muted { color: var(--muted, #a1a1aa); } .ds-link-muted:hover { color: var(--text, #f4f4f5); } .ds-link:focus-visible { outline: 2px solid var(--accent, #7c8cff); outline-offset: 3px; border-radius: 8px; }"
+    },
+    {
+      "name": "Other Project Row",
+      "kind": "card",
+      "refersTo": "list-row",
+      "description": "Lighter list card for secondary projects; lifts and nudges its corner arrow on hover.",
+      "html": "<a class=\"ds-row\" href=\"#\"><span class=\"ds-row-name\">Grimório da Campanha</span><span class=\"ds-row-desc\">Fichas de RPG com criação passo a passo e rolagem de dados.</span><span class=\"ds-row-tech\">Next.js · Supabase · Tailwind</span><svg class=\"ds-i\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8.5 7H17v8.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-row { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 4px 16px; max-width: 520px; padding: 18px 20px; border-radius: 16px; background: rgba(255,255,255,0.02); border: 1px solid var(--border, rgba(255,255,255,0.08)); color: var(--text, #f4f4f5); text-decoration: none; font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; transition: background 0.25s, border-color 0.25s, translate 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-row:hover { background: rgba(255,255,255,0.05); border-color: var(--border-strong, rgba(255,255,255,0.14)); translate: 0 -2px; } .ds-row:focus-visible { outline: 2px solid var(--accent, #7c8cff); outline-offset: 3px; } .ds-row-name { font-weight: 600; letter-spacing: -0.01em; } .ds-row-desc { grid-column: 1; color: var(--muted, #a1a1aa); font-size: 0.93rem; line-height: 1.5; } .ds-row-tech { grid-column: 1; margin-top: 6px; font-family: \"Geist Mono\", ui-monospace, Menlo, monospace; font-size: 0.74rem; color: var(--faint, #8b8b95); } .ds-row .ds-i { grid-column: 2; grid-row: 1; color: var(--faint, #8b8b95); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), color 0.25s; } .ds-row:hover .ds-i { transform: translate(2px,-2px); color: var(--text, #f4f4f5); }"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Skill chip; hover lights it in indigo and lifts 2px.",
+      "html": "<ul class=\"ds-chips\"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Supabase</li></ul>",
+      "css": ".ds-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; } .ds-chips li { padding: 6px 12px; border-radius: 999px; font-size: 0.88rem; color: var(--muted, #a1a1aa); background: rgba(255,255,255,0.03); border: 1px solid var(--border, rgba(255,255,255,0.08)); transition: color 0.2s, border-color 0.2s, background 0.2s, translate 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-chips li:hover { color: var(--text, #f4f4f5); border-color: var(--accent, #7c8cff); background: var(--accent-soft, rgba(124,140,255,0.16)); translate: 0 -2px; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "badge-status",
+      "description": "Availability pill with a pinging green dot; the only green UI element.",
+      "html": "<p class=\"ds-badge\"><span class=\"ds-badge-dot\"></span>Disponível para Jovem Aprendiz ou estágio em TI</p>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; gap: 10px; margin: 0; padding: 8px 14px 8px 12px; border-radius: 999px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.25); color: #bbf7d0; font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; font-size: 0.88rem; font-weight: 500; } .ds-badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green, #4ade80); animation: ds-ping 2s cubic-bezier(0.16,1,0.3,1) infinite; } @keyframes ds-ping { 0% { box-shadow: 0 0 0 0 rgba(74,222,128,0.6); } 70%, 100% { box-shadow: 0 0 0 8px rgba(74,222,128,0); } } @media (prefers-reduced-motion: reduce) { .ds-badge-dot { animation: none; } }"
+    },
+    {
+      "name": "Code Editor Window",
+      "kind": "custom",
+      "refersTo": "window-editor",
+      "description": "Signature hero window: traffic-light bar, filename tab, numbered syntax-colored code with an indigo block caret, mono status bar.",
+      "html": "<div class=\"ds-editor\"><div class=\"ds-editor-bar\"><span class=\"ds-dots\"><i></i><i></i><i></i></span><span class=\"ds-editor-tab\">murilo.js</span><span class=\"ds-editor-lang\">JavaScript</span></div><pre class=\"ds-editor-code\"><span class=\"ln\"><span class=\"k\">const </span><span class=\"v\">murilo</span> = {</span><span class=\"ln\">  cargo: <span class=\"s\">\"Dev Front-end\"</span>,</span><span class=\"ln\">  repositorios: <span class=\"n\">16</span>,</span><span class=\"ln\">};</span><span class=\"ln\"><span class=\"c\">// melhor decisão do dia:</span></span><span class=\"ln\"><span class=\"v\">murilo</span>.<span class=\"f\">contratar</span>();<b class=\"ds-caret\"></b></span></pre><div class=\"ds-editor-status\"><span>main</span><span>console.log(\"I'm coding right now\")</span></div></div>",
+      "css": ".ds-editor { max-width: 480px; border-radius: 20px; overflow: hidden; background: linear-gradient(180deg, rgba(23,23,27,0.92), rgba(15,15,18,0.95)); border: 1px solid var(--border-strong, rgba(255,255,255,0.14)); box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 24px 60px -24px rgba(0,0,0,0.7), 0 0 80px -30px rgba(124,140,255,0.45); font-family: \"Geist Mono\", ui-monospace, Menlo, monospace; color: var(--text, #f4f4f5); } .ds-editor-bar { display: flex; align-items: center; gap: 14px; height: 46px; padding: 0 16px; border-bottom: 1px solid var(--border, rgba(255,255,255,0.08)); background: rgba(255,255,255,0.02); } .ds-dots { display: inline-flex; gap: 7px; } .ds-dots i { width: 11px; height: 11px; border-radius: 50%; background: #ff5f57; } .ds-dots i:nth-child(2) { background: #febc2e; } .ds-dots i:nth-child(3) { background: #28c840; } .ds-editor-tab { font-size: 0.8rem; padding: 5px 10px; border-radius: 8px; background: rgba(255,255,255,0.06); } .ds-editor-lang { margin-left: auto; font-size: 0.75rem; color: var(--faint, #8b8b95); } .ds-editor-code { margin: 0; padding: 22px 22px 22px 0; font-family: inherit; font-size: 0.86rem; line-height: 1.75; color: #d4d4d8; counter-reset: ln; white-space: pre; overflow-x: auto; } .ds-editor-code .ln { display: block; position: relative; padding-left: 52px; min-height: 1.75em; } .ds-editor-code .ln::before { counter-increment: ln; content: counter(ln); position: absolute; left: 0; width: 36px; text-align: right; color: #52525b; } .ds-editor-code .k { color: #c792ea; } .ds-editor-code .v { color: #82aaff; } .ds-editor-code .s { color: #c3e88d; } .ds-editor-code .n { color: #f78c6c; } .ds-editor-code .f { color: #ffcb6b; } .ds-editor-code .c { color: #6b6b76; font-style: italic; } .ds-caret { display: inline-block; width: 8px; height: 1.15em; vertical-align: -0.2em; background: var(--accent, #7c8cff); animation: ds-blink 1s steps(1) infinite; } @keyframes ds-blink { 50% { opacity: 0; } } .ds-editor-status { display: flex; justify-content: space-between; gap: 16px; padding: 8px 16px; font-size: 0.72rem; color: var(--faint, #8b8b95); border-top: 1px solid var(--border, rgba(255,255,255,0.08)); background: rgba(255,255,255,0.02); } .ds-editor-status span:first-child { color: var(--accent, #7c8cff); }"
+    },
+    {
+      "name": "Terminal",
+      "kind": "input",
+      "refersTo": "window-terminal",
+      "description": "Signature interactive terminal: output log, indigo prompt input, suggestion chips that run commands.",
+      "html": "<div class=\"ds-term\"><div class=\"ds-term-bar\"><span class=\"ds-tdots\"><i></i><i></i><i></i></span>terminal</div><div class=\"ds-term-out\"><p class=\"ds-cmd\">sobre</p><p>Murilo Neves Teixeira. Dev front-end e estudante no Senac SP.</p></div><form class=\"ds-term-form\" onsubmit=\"return false\"><label for=\"ds-term-in\" class=\"ds-ps\">~/murilo $</label><input id=\"ds-term-in\" placeholder=\"help\" autocomplete=\"off\"></form><div class=\"ds-term-chips\"><button type=\"button\">help</button><button type=\"button\">projetos</button><button type=\"button\">sudo contratar</button></div></div>",
+      "css": ".ds-term { max-width: 480px; border-radius: 20px; overflow: hidden; background: #0c0c0f; border: 1px solid var(--border-strong, rgba(255,255,255,0.14)); box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 24px 60px -24px rgba(0,0,0,0.7); font-family: \"Geist Mono\", ui-monospace, Menlo, monospace; font-size: 0.82rem; color: var(--text, #f4f4f5); } .ds-term-bar { display: flex; align-items: center; gap: 14px; height: 44px; padding: 0 16px; border-bottom: 1px solid var(--border, rgba(255,255,255,0.08)); font-size: 0.78rem; color: var(--faint, #8b8b95); } .ds-tdots { display: inline-flex; gap: 7px; } .ds-tdots i { width: 11px; height: 11px; border-radius: 50%; background: #ff5f57; } .ds-tdots i:nth-child(2) { background: #febc2e; } .ds-tdots i:nth-child(3) { background: #28c840; } .ds-term-out { padding: 16px 18px 4px; line-height: 1.7; } .ds-term-out p { margin: 0; } .ds-cmd::before { content: \"~/murilo $ \"; color: var(--accent, #7c8cff); } .ds-term-form { display: flex; align-items: center; gap: 10px; padding: 8px 18px 14px; } .ds-ps { color: var(--accent, #7c8cff); white-space: nowrap; } .ds-term-form input { flex: 1; min-width: 0; padding: 6px 0; background: transparent; border: 0; outline: 0; color: var(--text, #f4f4f5); font: inherit; caret-color: var(--accent, #7c8cff); } .ds-term-form input::placeholder { color: var(--faint, #8b8b95); } .ds-term-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 18px 18px; border-top: 1px solid var(--border, rgba(255,255,255,0.08)); } .ds-term-chips button { font-family: inherit; font-size: 0.76rem; padding: 6px 12px; border-radius: 999px; cursor: pointer; background: rgba(255,255,255,0.03); border: 1px solid var(--border-strong, rgba(255,255,255,0.14)); color: var(--muted, #a1a1aa); transition: color 0.2s, border-color 0.2s, background 0.2s; } .ds-term-chips button:hover { color: var(--text, #f4f4f5); border-color: var(--accent, #7c8cff); background: var(--accent-soft, rgba(124,140,255,0.16)); } .ds-term-chips button:focus-visible { outline: 2px solid var(--accent, #7c8cff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Timeline",
+      "kind": "custom",
+      "refersTo": "timeline",
+      "description": "Rail with indigo-to-cyan scroll fill, hollow nodes that light indigo on reveal, gold node for the one starred milestone.",
+      "html": "<ol class=\"ds-tl\"><li class=\"in\"><time>Out 2026</time><h3>Projeto de rede para um grande evento</h3><p>Infraestrutura de rede no Packet Tracer.</p></li><li class=\"star\"><time>Set 2026</time><h3>Campeão da OBAFOG</h3><p>Três medalhas de ouro com a equipe.</p></li><li><time>Ago 2026</time><h3>O Quintal viralizou</h3><p>Mais de 116 mil impressões.</p></li></ol>",
+      "css": ".ds-tl { --progress: 0.55; list-style: none; position: relative; margin: 0; padding: 0 0 0 36px; max-width: 520px; font-family: \"Geist\", ui-sans-serif, system-ui, sans-serif; color: var(--text, #f4f4f5); } .ds-tl::before, .ds-tl::after { content: \"\"; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 2px; border-radius: 2px; } .ds-tl::before { background: var(--border-strong, rgba(255,255,255,0.14)); } .ds-tl::after { background: linear-gradient(var(--accent, #7c8cff), #22d3ee); transform-origin: top; transform: scaleY(var(--progress)); } .ds-tl li { position: relative; padding: 0 0 36px; } .ds-tl li:last-child { padding-bottom: 0; } .ds-tl li::before { content: \"\"; position: absolute; left: -36px; top: 5px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg, #09090b); border: 2px solid var(--border-strong, rgba(255,255,255,0.14)); z-index: 1; transition: border-color 0.4s, box-shadow 0.4s; } .ds-tl li.in::before { border-color: var(--accent, #7c8cff); box-shadow: 0 0 0 4px var(--accent-soft, rgba(124,140,255,0.16)); } .ds-tl li.star::before { background: #ffc83d; border-color: #ffc83d; box-shadow: 0 0 0 5px rgba(255,200,61,0.18); } .ds-tl li.star h3 { color: #ffd76a; } .ds-tl time { font-family: \"Geist Mono\", ui-monospace, Menlo, monospace; font-size: 0.78rem; color: var(--faint, #8b8b95); } .ds-tl h3 { margin: 4px 0 0; font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; } .ds-tl p { margin: 6px 0 0; color: var(--muted, #a1a1aa); font-size: 0.98rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Midnight Workbench",
+    "overview": "A developer's desk at night: the room is deep black, the furniture is graphite, and the only light in it is an electric-indigo glow that falls on whatever is being worked on. The system is the classic developer-portfolio canon (dark ground, clean grotesque type, large project cards with real screenshots) executed at product polish, Vercel and Linear in finish, Brittany Chiang in clarity. Its tools are part of the furniture: a code editor that types, a terminal that answers, a timeline that fills as you scroll. Programming shows up as working instruments, never as costume.\n\nDensity is calm and generous: one centered 1160px column, big type with tight tracking, wide section breathing room, cards that hold a full screenshot. Surfaces are near-flat graphite separated from the black by 8% white hairlines; depth comes from soft, deep, negative-spread shadows and from light that follows the pointer. Motion is constant but quiet: a slow aurora drift behind everything, blur-to-sharp reveals on scroll, a pointer-tracked glow on cards, all of it collapsed under reduced motion.\n\nThe owner rejected the earlier bespoke \"git log graph on cobalt\" world on color and layout and chose this canon deliberately. The names in this file (North Star, color names) were derived from the build's direction contract, not confirmed with the owner. One divergence from the contract is recorded as built: the contract allows a single indigo accent, while the build also lets each project card wear its own hue, uses gold for achievement and green for availability. Those are written down below as scoped rules.",
+    "keyCharacteristics": [
+      "Dark-only (color-scheme: dark): deep black ground, two graphite surface steps, white-alpha hairlines.",
+      "One electric-indigo light for focus, glow, caret, prompt and emphasis; never a filled button.",
+      "Near-white pill as the primary action; translucent pill as the secondary.",
+      "Geist for everything human, Geist Mono for everything machine (code, dates, tags, stacks).",
+      "Real screenshots of shipped work inside large 20px-radius cards with a pointer-lit border.",
+      "Working dev instruments as signature pieces: typing editor, interactive terminal, scroll-filled timeline.",
+      "Atmospheric backdrop: fixed indigo and teal aurora over a masked 64px grid."
+    ],
+    "rules": [
+      {
+        "name": "The Light-Only Indigo Rule",
+        "body": "Electric Indigo is light, focus and emphasis. It glows, outlines, underlines a prompt and colors a short line of text; it never fills a button, a card or a section. The primary action is near-white, not indigo.",
+        "section": "colors"
+      },
+      {
+        "name": "The Project Owns Its Hue Rule",
+        "body": "Inside a project card the accent is reassigned to that project's own hue (sky for Quintal, pink for Nexus, orange for Bram, gold for Frangão, green for Banco, lilac for Bacon Burguer). The card's tag pills, pointer-lit border and inner wash take that hue; outside cards the accent is always indigo. One hue per card, never two.",
+        "section": "colors"
+      },
+      {
+        "name": "The Earned Gold Rule",
+        "body": "Trophy Gold marks something achieved or leveled up. It does not decorate.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Is Machine Rule",
+        "body": "Geist Mono carries code, commands, dates, file names, tech stacks and tags. It never sets a heading or a sentence of prose.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tight Heavy Heading Rule",
+        "body": "Every heading is 600 to 700 with negative tracking (-0.015em for small titles up to -0.04em for display). Body text keeps normal tracking and never goes bold for emphasis beyond 600.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Until Touched Rule",
+        "body": "Cards, rows and panels are flat at rest. They lift, glow or brighten their border only in response to the pointer. Only the two windows float at rest.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Light Follows The Hand Rule",
+        "body": "Glows track the pointer (cards, editor, contact panel, page spotlight) and the editor tilts up to 6 degrees toward it, only on fine pointers and only without reduced motion. Touch and reduced-motion users get the same surfaces, still and complete.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the ground Deep Black and build depth with the two graphite steps and 8% / 14% white hairlines.",
+      "Do use Electric Indigo for light, focus and emphasis only: focus rings, carets, prompts, glows, active states, one short line of hero text.",
+      "Do make the near-white pill the primary action and the translucent hairline pill the secondary.",
+      "Do show every project as a real screenshot (or a live animated piece of the product) in a 16:10 frame inside a 20px Graphite card, with a \"visit\" link and a \"code\" link.",
+      "Do reassign the accent per project card to that project's own hue, one hue per card.",
+      "Do set code, dates, file names, stacks and commands in Geist Mono; everything else in Geist.",
+      "Do use the house ease (cubic-bezier(0.16, 1, 0.3, 1)): 0.2 to 0.35s for state, 0.5 to 0.9s for lifts and reveals, with reveals combining fade, a 24px rise and a 4px blur clearing, staggered 0.08s.",
+      "Do collapse every animation, typing effect and pointer effect to its finished state under prefers-reduced-motion, and gate pointer effects to fine pointers.",
+      "Do keep focus visible: 2px indigo outline, 3px offset."
+    ],
+    "donts": [
+      "Don't fill buttons, cards or sections with Electric Indigo; it is a light, not a paint.",
+      "Don't add a light theme or light sections; the system is dark-only by the owner's choice.",
+      "Don't use Trophy Gold or Signal Green outside achievement and availability.",
+      "Don't put two accent hues in one card or let a project hue leak outside its card.",
+      "Don't set headings or prose in Geist Mono, or body text in weights above 600.",
+      "Don't use hard offset, colored-outline or light-colored drop shadows; shadows are deep black with negative spread, plus the two indigo glows named above.",
+      "Don't add square corners or thick borders; containers are 16 to 20px, controls are pills, borders are 1px hairlines.",
+      "Don't set readable text in Gutter Gray or Separator Graphite.",
+      "Don't put a label, kicker or eyebrow above section titles; a section head is title plus lede. The category pills above project-card titles are a carried exception in the current build, not a pattern to repeat on new surfaces.",
+      "Don't bring back the discarded \"git log graph on cobalt\" world: no cobalt ground, no commit-graph layout."
+    ]
+  }
+}
