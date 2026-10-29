@@ -3,379 +3,329 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Murilo Neves Teixeira · dev web</title>
-  <meta name="description" content="Portfólio do Murilo Neves Teixeira, dev front-end e estudante de Informática no Senac SP. Jogos, apps e sites feitos do começo ao fim: Quintal do Murilo, Nexus, Bram e as Cinzas, Frangão e mais.">
-  <meta name="theme-color" content="#141d8a">
-  <meta property="og:title" content="Murilo Neves Teixeira · dev web">
-  <meta property="og:description" content="Jogos, apps e sites feitos do começo ao fim, do pixel art ao pagamento por Pix.">
+  <title>Murilo Neves Teixeira · Dev Front-end</title>
+  <meta name="description" content="Portfólio do Murilo Neves Teixeira, dev front-end e estudante de Informática no Senac SP. Jogos, apps e sites feitos do começo ao fim.">
+  <meta name="theme-color" content="#09090b">
+  <meta property="og:title" content="Murilo Neves Teixeira · Dev Front-end">
+  <meta property="og:description" content="Jogos, apps e sites feitos do começo ao fim. Procurando vaga de Jovem Aprendiz ou estágio em TI.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/shots/bram.webp">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23141d8a'/%3E%3Cpath d='M11 4v24M11 9c0 6 10 4 10 10v3' fill='none' stroke='%23f5f3ee' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='11' cy='9' r='4' fill='%23ffd23f' stroke='%230a0f3d' stroke-width='2'/%3E%3Ccircle cx='21' cy='22' r='4' fill='%23ff6a3d' stroke='%230a0f3d' stroke-width='2'/%3E%3C/svg%3E">
+  <meta property="og:image" content="assets/shots/quintal.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2309090b'/%3E%3Cpath d='M12 10l-6 6 6 6M20 10l6 6-6 6' fill='none' stroke='%237c8cff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Martian+Mono:wdth,wght@87.5..112.5,300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <!--
-THESIS: o portfólio é um `git log --graph` que se imprime enquanto você rola; cada projeto é uma branch que sai da main, recebe commits (features reais) e volta. Recusa o padrão "terminal preto + cards brilhando".
-OWN-WORLD: chão cobalto profundo (#141d8a), trilhos de branch grossos com contorno tinta (#0a0f3d) em cores de faixa (brasa, gema, menta, rosa, céu, lilás); faixas inteiras em papel, gema e brasa. Bricolage Grotesque condensada 800 + Martian Mono para hash, ref e dado.
-STORY: recrutador e cliente entendem em segundos que o Murilo entrega coisas inteiras e divertidas, abrem um projeto ao vivo e chamam no e-mail, GitHub ou LinkedIn.
-FIRST VIEWPORT: canvas de grafo vivo à direita (o mouse cria branches), nome gigante à esquerda como mensagem do commit HEAD no trilho principal, hash e refs abaixo, ações "Ver os projetos" e "Falar comigo", status do último push.
-FORM: Grafo de commits, 1º da minha lista (pick aceito pelo usuário), seed 516f1ec8.
+THESIS: portfólio dev clássico executado com acabamento de produto premium (régua: Vercel/Linear com a clareza de Brittany Chiang); escolhido pelo usuário como caminho canônico depois de recusar o mundo "git log em cobalto" por cores e layout.
+OWN-WORLD: preto profundo (#09090b), superfícies grafite, bordas em 8% de branco, um acento índigo elétrico (#7c8cff) só para luz, foco e destaque; Geist + Geist Mono; cards grandes com prints reais e borda que acende sob o mouse.
+STORY: recrutador e cliente entendem em segundos quem é o Murilo, o que ele busca (Jovem Aprendiz/estágio), abrem projetos ao vivo e chamam no e-mail, GitHub ou LinkedIn.
+FIRST VIEWPORT: à esquerda nome grande, cargo, frase, botões "Ver projetos" e "Falar comigo" e o selo de disponibilidade; à direita um editor de código digitando o objeto `murilo`; aurora e grade sutil ao fundo.
+FORM: canon (saída padrão escolhida pelo usuário), seed 516f1ec8 reroll 1.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 <a class="skip" href="#projetos">Pular para os projetos</a>
 
 <svg width="0" height="0" class="sprite" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M15 9V6.5A2.5 2.5 0 0 0 12.5 4h-6A2.5 2.5 0 0 0 4 6.5v6A2.5 2.5 0 0 0 6.5 15H9"/></g></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></g></symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m9 8-4 4 4 4M15 8l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></g></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
   <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
   <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
 </svg>
 
-<header class="nav">
-  <a class="nav__brand" href="#topo" aria-label="Murilo Neves Teixeira, voltar ao topo">
-    <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M9 2v24M9 8c0 6 10 4 10 10v8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="9" cy="8" r="4" fill="var(--yolk)" stroke="var(--ink)" stroke-width="2"/><circle cx="19" cy="20" r="4" fill="var(--ember)" stroke="var(--ink)" stroke-width="2"/></svg>
-    <span>murilo</span>
-  </a>
-  <p class="nav__prompt" aria-hidden="true"><span class="nav__path">~/portfolio</span><span class="nav__sign">$</span><span class="nav__cmd" data-type="git log --graph --all"></span><span class="caret"></span></p>
-  <nav class="nav__links" aria-label="Seções">
-    <a href="#projetos">projetos</a>
-    <a href="#stack">stack</a>
-    <a href="#sobre">sobre</a>
-    <a href="#contato">contato</a>
-  </nav>
-  <p class="nav__head" aria-hidden="true"><span class="nav__head-dot"></span>HEAD → <b data-headref>main</b></p>
+<div class="bg" aria-hidden="true">
+  <div class="bg__grid"></div>
+  <div class="bg__aurora bg__aurora--a"></div>
+  <div class="bg__aurora bg__aurora--b"></div>
+  <div class="bg__spot"></div>
+</div>
+
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <a class="nav__brand" href="#topo" aria-label="Murilo Neves Teixeira, voltar ao topo">
+      <span class="nav__logo" aria-hidden="true"><svg class="i"><use href="#i-code"/></svg></span>
+      <span>Murilo Teixeira</span>
+    </a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#stack">Stack</a>
+    </nav>
+    <a class="btn btn--sm btn--light nav__cta" href="#contato">Contato</a>
+  </div>
 </header>
 
-<svg class="graph" aria-hidden="true" focusable="false"></svg>
-
 <main>
-  <section class="hero" id="topo" data-ref="main">
-    <canvas class="hero__canvas" aria-hidden="true"></canvas>
-    <div class="hero__veil" aria-hidden="true"></div>
-    <div class="hero__inner">
-      <h1 class="hero__name" data-node="head"><span class="hero__line"><span>Murilo</span></span><span class="hero__line"><span>Neves Teixeira</span></span></h1>
-      <p class="hero__meta mono"><span class="hash" title="commit real deste portfólio">e79510e</span><span class="ref ref--head">HEAD → main</span><span class="ref">origin/main</span><span class="hero__city">São Paulo, BR</span></p>
-      <p class="hero__msg">Dev front-end e estudante de Informática no Senac SP. Faço jogos, apps e sites do começo ao fim, do pixel art ao pagamento por Pix.</p>
-      <p class="hero__open"><span class="ref ref--open mono">open-to-work</span><span>Procurando vaga de Jovem Aprendiz ou estágio em TI, meio período.</span></p>
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero__text">
+      <h1 class="hero__title">
+        <span class="line"><span>Murilo Neves</span></span>
+        <span class="line"><span>Teixeira</span></span>
+      </h1>
+      <p class="hero__role">Dev Front-end · Estudante de TI no Senac SP</p>
+      <p class="hero__lede">Faço jogos, apps e sites do começo ao fim, do pixel art ao pagamento por Pix. Aprendo construindo coisas que as pessoas usam de verdade.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#projetos">Ver os projetos <svg class="i"><use href="#i-down"/></svg></a>
+        <a class="btn btn--light" href="#projetos">Ver projetos <svg class="i"><use href="#i-right"/></svg></a>
         <a class="btn btn--ghost" href="#contato">Falar comigo</a>
       </div>
-      <p class="hero__status mono" data-status><span class="hero__pulse" aria-hidden="true"></span><span data-status-text>console.log("I'm coding right now")</span></p>
+      <p class="badge"><span class="badge__dot" aria-hidden="true"></span>Disponível para Jovem Aprendiz ou estágio em TI · meio período</p>
+      <ul class="hero__facts">
+        <li><svg class="i"><use href="#i-pin"/></svg>São Paulo, SP</li>
+        <li><svg class="i"><use href="#i-trophy"/></svg>Campeão OBAFOG 2026</li>
+        <li><svg class="i"><use href="#i-github"/></svg>16 repositórios</li>
+      </ul>
     </div>
-    <p class="hero__pager mono" aria-hidden="true">: role para continuar o log<span class="caret"></span></p>
-    <p class="hero__hint mono" aria-hidden="true">clique no grafo para criar uma branch</p>
+
+    <div class="editor" data-tilt role="img" aria-label="Editor de código mostrando um objeto JavaScript que descreve o Murilo: dev front-end, Senac SP, stack HTML, CSS, JavaScript, React e TypeScript, buscando Jovem Aprendiz ou estágio.">
+      <div class="editor__bar">
+        <span class="editor__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="editor__tab mono">murilo.js</span>
+        <span class="editor__lang mono">JavaScript</span>
+      </div>
+      <pre class="editor__code mono" aria-hidden="true"><code data-code></code><span class="editor__caret"></span></pre>
+      <div class="editor__status mono" aria-hidden="true"><span>main</span><span data-status>console.log("I'm coding right now")</span></div>
+    </div>
   </section>
 
-  <section class="projects" id="projetos" data-ref="projetos">
-    <header class="section-head">
-      <h2 class="display" data-node="main">Projetos</h2>
-      <p class="section-head__cmd mono">git log --graph --branches <span>· 6 em destaque de 16 repositórios no GitHub</span></p>
+  <!-- MARQUEE -->
+  <div class="marquee" aria-label="Tecnologias que eu uso">
+    <div class="marquee__track mono">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Supabase</span><span>Vercel</span><span>Git</span><span>Canvas</span><span>Web Audio</span><span>PWA</span><span>Tailwind</span><span>Node.js</span>
+      <span aria-hidden="true">HTML</span><span aria-hidden="true">CSS</span><span aria-hidden="true">JavaScript</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">React</span><span aria-hidden="true">Next.js</span><span aria-hidden="true">Supabase</span><span aria-hidden="true">Vercel</span><span aria-hidden="true">Git</span><span aria-hidden="true">Canvas</span><span aria-hidden="true">Web Audio</span><span aria-hidden="true">PWA</span><span aria-hidden="true">Tailwind</span><span aria-hidden="true">Node.js</span>
+    </div>
+  </div>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <header class="section__head reveal">
+      <h2 class="section__title">Projetos em destaque</h2>
+      <p class="section__lede">Seis coisas que eu construí e que estão no ar. Clique e use.</p>
     </header>
 
-    <article class="proj" id="quintal" data-ref="feat/quintal-do-murilo" style="--lane: var(--sky)">
-      <div class="proj__text">
-        <h3 class="proj__title" data-node="fork">Quintal do Murilo</h3>
-        <p class="proj__meta mono"><span class="ref ref--lane">feat/quintal-do-murilo</span><span>projeto autoral, 100% sem IA</span></p>
-        <p class="proj__desc">Meu laboratório de HTML, CSS e JavaScript, feito do zero só com o Google e muita tentativa e erro. Imita um sistema antigo, com janelas que parecem programas de verdade. Documento cada etapa no LinkedIn, inclusive os bugs.</p>
-        <ol class="log">
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>janelas arrastáveis com o mouse e botões de fechar que funcionam</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>menu Iniciar estilo Windows 7 com sons de abrir e fechar</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>player de música customizado</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>fix: nomes de arquivo com maiúsculas que só quebravam em produção</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>o post sobre ele passou de 116 mil impressões no LinkedIn</span></li>
-        </ol>
-        <p class="proj__stack mono">HTML · CSS · JavaScript · nenhuma linha de IA</p>
-        <div class="proj__links">
-          <a class="btn btn--lane" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener">Visitar o Quintal <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-          <a class="link" href="https://github.com/parmurus1/QuintalDoMurilo" target="_blank" rel="noopener">Código no GitHub <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-        </div>
-      </div>
-      <figure class="proj__shot">
-        <a class="plate" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <span class="plate__bar mono">quintal-do-murilo.vercel.app<svg class="i"><use href="#i-arrow"/></svg></span>
+    <div class="bento">
+      <article class="card card--wide reveal" style="--accent: #5ec8ff">
+        <a class="card__shot" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <img src="assets/shots/quintal.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
         </a>
-        <figcaption>Janelas abertas sobre o papel de parede, com o desenho “Hoje não, Claude!”.</figcaption>
-      </figure>
-      <p class="proj__merge mono" data-node="merge">Merge branch '<b>feat/quintal-do-murilo</b>' into main</p>
-    </article>
-
-    <article class="proj" id="nexus" data-ref="feat/nexus" style="--lane: var(--pink)">
-      <div class="proj__text">
-        <h3 class="proj__title" data-node="fork">Nexus</h3>
-        <p class="proj__meta mono"><span class="ref ref--lane">feat/nexus</span><span>freelance · desde mar. 2026</span></p>
-        <p class="proj__desc">Site oficial da banda de rock Nexus, feito a pedido dos integrantes, com prazo e escopo de cliente de verdade. Fiz a estrutura, o design e a experiência; no back-end tive apoio de IA.</p>
-        <ol class="log">
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>rifa com Pix automático via webhook do Mercado Pago</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>painel admin para shows, galeria, merch e rifa</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>funções serverless na Vercel com banco no Supabase</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>agenda de shows, galeria de fotos e vídeos, loja</span></li>
-        </ol>
-        <p class="proj__stack mono">HTML · CSS · JavaScript · Node.js · Supabase · Mercado Pago</p>
-        <div class="proj__links">
-          <a class="btn btn--lane" href="https://nexusband.com.br" target="_blank" rel="noopener">Ver o site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-          <a class="link" href="https://github.com/parmurus1/Nexus" target="_blank" rel="noopener">Código no GitHub <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+        <div class="card__body">
+          <p class="card__tags mono"><span>Projeto autoral</span><span>100% sem IA</span></p>
+          <h3 class="card__title">Quintal do Murilo</h3>
+          <p class="card__desc">Meu laboratório de HTML, CSS e JavaScript, feito do zero só com o Google. Imita um sistema antigo: janelas arrastáveis, menu Iniciar com sons e player de música. O post sobre ele passou de <strong>116 mil impressões</strong> no LinkedIn.</p>
+          <ul class="card__stack mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="card__links">
+            <a class="link" href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener">Visitar <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+            <a class="link link--muted" href="https://github.com/parmurus1/QuintalDoMurilo" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+          </div>
         </div>
-      </div>
-      <figure class="proj__shot">
-        <a class="plate" href="https://nexusband.com.br" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <span class="plate__bar mono">nexusband.com.br<svg class="i"><use href="#i-arrow"/></svg></span>
+      </article>
+
+      <article class="card reveal" style="--accent: #ff5fa8">
+        <a class="card__shot" href="https://nexusband.com.br" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <img src="assets/shots/nexus.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
         </a>
-        <figcaption>Capa do site, com a foto de um show da banda.</figcaption>
-      </figure>
-      <p class="proj__merge mono" data-node="merge">Merge branch '<b>feat/nexus</b>' into main</p>
-    </article>
-
-    <article class="proj" id="bram" data-ref="feat/bram-cinzas" style="--lane: var(--ember)">
-      <div class="proj__text">
-        <h3 class="proj__title" data-node="fork">Bram e as Cinzas de Vaelgrath</h3>
-        <p class="proj__meta mono"><span class="ref ref--lane">feat/bram-cinzas</span><span>jogo de navegador</span></p>
-        <p class="proj__desc">Roguelite de cartas sobre luto e memória. Roda direto no navegador, no PC ou no celular, sem instalar nada.</p>
-        <ol class="log">
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>pixel art inteira desenhada como grades de caracteres</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>música, ambiente e efeitos gerados em código com Web Audio</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>cenários em canvas com efeito de fita VHS e partículas</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>motor de combate: Saco de Almas, fila e combos</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>inimigos com falas e vozes, relíquias e máscaras</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>8,5 mil linhas de JavaScript puro, sem engine</span></li>
-        </ol>
-        <p class="proj__stack mono">JavaScript · Canvas · Web Audio · localStorage</p>
-        <div class="proj__links">
-          <a class="btn btn--lane" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener">Jogar agora <svg class="i"><use href="#i-play"/></svg><span class="sr">(abre em nova aba)</span></a>
-          <a class="link" href="https://github.com/parmurus1/Bram-Cinzas" target="_blank" rel="noopener">Código no GitHub <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+        <div class="card__body">
+          <p class="card__tags mono"><span>Freelance</span><span>Desde mar. 2026</span></p>
+          <h3 class="card__title">Nexus Band</h3>
+          <p class="card__desc">Site oficial da banda de rock: agenda, galeria, loja e rifa online com Pix que se confirma sozinho. Cuidei da estrutura, do design e da experiência; no back-end tive apoio de IA.</p>
+          <ul class="card__stack mono"><li>JavaScript</li><li>Node.js</li><li>Supabase</li><li>Mercado Pago</li></ul>
+          <div class="card__links">
+            <a class="link" href="https://nexusband.com.br" target="_blank" rel="noopener">Ver site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+            <a class="link link--muted" href="https://github.com/parmurus1/Nexus" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+          </div>
         </div>
-      </div>
-      <figure class="proj__shot">
-        <a class="plate" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <span class="plate__bar mono">jogotop-lovat.vercel.app<svg class="i"><use href="#i-arrow"/></svg></span>
+      </article>
+
+      <article class="card reveal" style="--accent: #ff8a4c">
+        <a class="card__shot" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <img src="assets/shots/bram.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
         </a>
-        <figcaption>Tela inicial: o coelho Bram na fogueira, embaixo de um céu em pixel art.</figcaption>
-      </figure>
-      <p class="proj__merge mono" data-node="merge">Merge branch '<b>feat/bram-cinzas</b>' into main</p>
-    </article>
-
-    <article class="proj" id="frangao" data-ref="feat/frangao" style="--lane: var(--yolk)">
-      <div class="proj__text">
-        <h3 class="proj__title" data-node="fork">Frangão</h3>
-        <p class="proj__meta mono"><span class="ref ref--lane">feat/frangao</span><span>app de treino (PWA)</span></p>
-        <p class="proj__desc">Calistenia em casa, do ovo ao galo. Treinos guiados sem equipamento e um frango que evolui junto com você.</p>
-        <ol class="log">
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>7 programas com progressão semanal automática</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>52 exercícios animados, com câmera lenta</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>player guiado com cronômetro, bipes e voz do treinador</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>XP, sequência de dias, missões e 33 conquistas</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>funciona offline e sincroniza pelo Supabase</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>testes de gamificação e sincronização com Vitest</span></li>
-        </ol>
-        <p class="proj__stack mono">React · TypeScript · Vite · Supabase · Vitest</p>
-        <div class="proj__links">
-          <a class="btn btn--lane" href="https://frango-sand.vercel.app" target="_blank" rel="noopener">Abrir o app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-          <a class="link" href="https://github.com/parmurus1/Frango" target="_blank" rel="noopener">Código no GitHub <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+        <div class="card__body">
+          <p class="card__tags mono"><span>Jogo</span><span>Roguelite de cartas</span></p>
+          <h3 class="card__title">Bram e as Cinzas de Vaelgrath</h3>
+          <p class="card__desc">Roguelite de cartas sobre luto e memória. Pixel art desenhada em código, trilha e efeitos gerados com Web Audio e 8,5 mil linhas de JavaScript puro, sem engine.</p>
+          <ul class="card__stack mono"><li>JavaScript</li><li>Canvas</li><li>Web Audio</li></ul>
+          <div class="card__links">
+            <a class="link" href="https://jogotop-lovat.vercel.app" target="_blank" rel="noopener">Jogar <svg class="i"><use href="#i-play"/></svg><span class="sr">(abre em nova aba)</span></a>
+            <a class="link link--muted" href="https://github.com/parmurus1/Bram-Cinzas" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+          </div>
         </div>
-      </div>
-      <figure class="proj__shot">
-        <a class="plate plate--art" href="https://frango-sand.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <span class="plate__bar mono">frango-sand.vercel.app<svg class="i"><use href="#i-arrow"/></svg></span>
+      </article>
+
+      <article class="card reveal" style="--accent: #ffc83d">
+        <a class="card__shot card__shot--art" href="https://frango-sand.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <span class="frango">
             <img class="frango__mascot" src="assets/shots/frangao-mascote.svg" width="512" height="512" loading="lazy" alt="">
             <span class="frango__panel">
-              <span class="frango__level mono">nível <b data-frango-level>1</b></span>
+              <span class="frango__level mono">Nível <b data-frango-level>1</b></span>
               <span class="frango__stage" data-frango-stage>Ovo</span>
               <span class="frango__xp"><span data-frango-xp></span></span>
-              <span class="frango__stages mono">
-                <span>Ovo</span><span>Pintinho</span><span>Frango</span><span>Frango Sarado</span><span>Galo</span><span>Galo Lendário</span>
-              </span>
             </span>
           </span>
         </a>
-        <figcaption>Ilustração com o mascote e os 6 estágios de evolução que existem no app.</figcaption>
-      </figure>
-      <p class="proj__merge mono" data-node="merge">Merge branch '<b>feat/frangao</b>' into main</p>
-    </article>
-
-    <article class="proj" id="banco" data-ref="feat/banco-do-murilo" style="--lane: var(--mint)">
-      <div class="proj__text">
-        <h3 class="proj__title" data-node="fork">Banco do Murilo</h3>
-        <p class="proj__meta mono"><span class="ref ref--lane">feat/banco-do-murilo</span><span>app de finanças (PWA)</span></p>
-        <p class="proj__desc">Meu banco particular: registra gastos, separa dinheiro em potes com metas e funciona até sem internet. Com cara de Windows XP, do jeito que eu queria.</p>
-        <ol class="log">
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>potes com meta, prazo e simulador de juros compostos</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>importa extrato do banco (OFX ou CSV) e categoriza sozinho</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>faz conta no campo de valor: <code>12+8,50</code> ou <code>3x25</code></span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>dias sem gastar, com sequência e medalhas</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>offline primeiro, instalável e sincronizado pelo Supabase</span></li>
-        </ol>
-        <p class="proj__stack mono">JavaScript · Service Worker · Supabase · zero build</p>
-        <div class="proj__links">
-          <a class="btn btn--lane" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener">Abrir o app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-          <a class="link" href="https://github.com/parmurus1/Bancodomurilo" target="_blank" rel="noopener">Código no GitHub <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+        <div class="card__body">
+          <p class="card__tags mono"><span>App (PWA)</span><span>Calistenia</span></p>
+          <h3 class="card__title">Frangão</h3>
+          <p class="card__desc">Treinos guiados em casa, sem equipamento, com 52 exercícios animados, voz do treinador, XP, missões e um mascote que evolui do ovo ao Galo Lendário.</p>
+          <ul class="card__stack mono"><li>React</li><li>TypeScript</li><li>Supabase</li><li>Vitest</li></ul>
+          <div class="card__links">
+            <a class="link" href="https://frango-sand.vercel.app" target="_blank" rel="noopener">Abrir app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+            <a class="link link--muted" href="https://github.com/parmurus1/Frango" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+          </div>
         </div>
-      </div>
-      <figure class="proj__shot proj__shot--duo">
-        <a class="plate" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <span class="plate__bar mono">bancodomurilo.vercel.app<svg class="i"><use href="#i-arrow"/></svg></span>
+      </article>
+
+      <article class="card reveal" style="--accent: #4ade80">
+        <a class="card__shot" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <img src="assets/shots/banco.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
-          <img class="plate__phone" src="assets/shots/banco-mobile.webp" width="780" height="1688" loading="lazy" decoding="async" alt="">
         </a>
-        <figcaption>Início no PC e no celular, com os dados de exemplo do próprio app.</figcaption>
-      </figure>
-      <p class="proj__merge mono" data-node="merge">Merge branch '<b>feat/banco-do-murilo</b>' into main</p>
-    </article>
-
-    <article class="proj" id="bacon" data-ref="feat/bacon-burguer" style="--lane: var(--lilac)">
-      <div class="proj__text">
-        <h3 class="proj__title" data-node="fork">Bacon Burguer</h3>
-        <p class="proj__meta mono"><span class="ref ref--lane">feat/bacon-burguer</span><span>site de hamburgueria</span></p>
-        <p class="proj__desc">Site vitrine de uma hamburgueria no Jardim Vergueiro, em São Paulo, com cara de cartaz de letrista. Leva quem está com fome direto para o pedido.</p>
-        <ol class="log">
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>placa ABERTO / FECHADO que segue o horário da casa</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>cardápio em abas: lanches, porções e shakes</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>cartazes que colam na tela e barra de pedido no celular</span></li>
-          <li data-node="branch"><span class="plus mono" aria-hidden="true">+</span><span>easter egg: cinco cliques no porco</span></li>
-        </ol>
-        <p class="proj__stack mono">HTML · CSS · JavaScript · sem build</p>
-        <div class="proj__links">
-          <a class="btn btn--lane" href="https://baconburguer.vercel.app" target="_blank" rel="noopener">Ver o site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
-          <a class="link" href="https://github.com/parmurus1/BaconBurguer" target="_blank" rel="noopener">Código no GitHub <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+        <div class="card__body">
+          <p class="card__tags mono"><span>App (PWA)</span><span>Finanças</span></p>
+          <h3 class="card__title">Banco do Murilo</h3>
+          <p class="card__desc">Meu banco particular: gastos, potes com metas, importação de extrato OFX/CSV e funciona offline. Uso todo dia, com cara de Windows XP do jeito que eu queria.</p>
+          <ul class="card__stack mono"><li>JavaScript</li><li>Service Worker</li><li>Supabase</li></ul>
+          <div class="card__links">
+            <a class="link" href="https://bancodomurilo.vercel.app" target="_blank" rel="noopener">Abrir app <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+            <a class="link link--muted" href="https://github.com/parmurus1/Bancodomurilo" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+          </div>
         </div>
-      </div>
-      <figure class="proj__shot">
-        <a class="plate" href="https://baconburguer.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <span class="plate__bar mono">baconburguer.vercel.app<svg class="i"><use href="#i-arrow"/></svg></span>
+      </article>
+
+      <article class="card card--wide card--flip reveal" style="--accent: #c4a5ff">
+        <a class="card__shot" href="https://baconburguer.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <img src="assets/shots/bacon.webp" width="1280" height="800" loading="lazy" decoding="async" alt="">
         </a>
-        <figcaption>Primeira dobra: cartaz colado, botões de pedido e o Danger Burguer.</figcaption>
-      </figure>
-      <p class="proj__merge mono" data-node="merge">Merge branch '<b>feat/bacon-burguer</b>' into main</p>
-    </article>
-  </section>
-
-  <section class="more" id="mais" data-ref="log --oneline">
-    <header class="section-head">
-      <h2 class="display" data-node="main">Mais no log</h2>
-      <p class="section-head__cmd mono">git log --oneline <span>· clientes, jogos e projetos da escola, com o último commit real de cada um</span></p>
-    </header>
-    <ul class="oneline">
-      <li data-node="main"><a href="https://tlp-blue.vercel.app" target="_blank" rel="noopener">
-        <span class="hash" title="último commit em parmurus1/FIchasTLP">ffb54aa</span><span class="oneline__name">Grimório da Campanha</span><span class="oneline__desc">Fichas de RPG com criação passo a passo, rolagem de dados e visão do mestre.</span><span class="oneline__tech mono">Next.js · Supabase · Tailwind</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-      <li data-node="main"><a href="https://igrejaceac.vercel.app" target="_blank" rel="noopener">
-        <span class="hash" title="último commit em parmurus1/GaleriaCEAC">8b3efe2</span><span class="oneline__name">Galeria CEAC</span><span class="oneline__desc">Voluntário: galeria de fotos e vídeos da comunidade, com pastas, lightbox e painel admin protegido por RLS.</span><span class="oneline__tech mono">JavaScript · Supabase</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-      <li data-node="main"><a href="https://fearlessenglish.vercel.app" target="_blank" rel="noopener" data-preview="assets/shots/fearless.webp">
-        <span class="hash" title="último commit em parmurus1/FearlessEnglish">3378328</span><span class="oneline__name">Fearless English</span><span class="oneline__desc">Página única para uma professora de inglês captar alunas.</span><span class="oneline__tech mono">HTML · CSS</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-      <li data-node="main"><a href="https://arroz-omega.vercel.app" target="_blank" rel="noopener" data-preview="assets/shots/arroz.webp">
-        <span class="hash" title="último commit em parmurus1/Arroz">dc5bd66</span><span class="oneline__name">Arroz Dourado</span><span class="oneline__desc">Jogo em três atos: dívida com a Tríade, grãos de arroz, kart, ritmo, luta e terror.</span><span class="oneline__tech mono">JavaScript · Canvas · Web Audio</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-      <li data-node="main"><a href="https://parmurus1.github.io/DataEllo/" target="_blank" rel="noopener" data-preview="assets/shots/dataello.webp">
-        <span class="hash" title="último commit em parmurus1/DataEllo">2ae4b6f</span><span class="oneline__name">DataEllo</span><span class="oneline__desc">Projeto da escola: empresa fictícia que organiza bancos de dados com IA.</span><span class="oneline__tech mono">HTML · CSS · JavaScript</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-      <li data-node="main"><a href="https://parmurus1.github.io/CameraPet/" target="_blank" rel="noopener" data-preview="assets/shots/camerapet.webp">
-        <span class="hash" title="último commit em parmurus1/CameraPet">36cc479</span><span class="oneline__name">CameraPet</span><span class="oneline__desc">Projeto em grupo da escola: IA que procura pets perdidos nas câmeras do SmartSampa.</span><span class="oneline__tech mono">HTML · CSS</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-    </ul>
-    <img class="preview" src="assets/shots/fearless.webp" alt="" aria-hidden="true" width="1280" height="800">
-  </section>
-
-  <section class="stack" id="stack" data-ref="diff --stat">
-    <header class="section-head">
-      <h2 class="display" data-node="main">O que eu uso</h2>
-      <p class="section-head__cmd mono">git diff --stat <span>· quantos dos meus 16 repositórios públicos usam cada coisa</span></p>
-    </header>
-    <ul class="stat">
-      <li style="--n:16"><span class="stat__name">Git + GitHub</span><span class="stat__n mono">16</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Todo projeto, do primeiro commit ao deploy.</span></li>
-      <li style="--n:12"><span class="stat__name">HTML + CSS</span><span class="stat__n mono">12</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Quase tudo, de jogo a cardápio.</span></li>
-      <li style="--n:11"><span class="stat__name">Vercel</span><span class="stat__n mono">11</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Onde os projetos ficam no ar.</span></li>
-      <li style="--n:8"><span class="stat__name">JavaScript puro</span><span class="stat__n mono">8</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Bram, Arroz Dourado, Banco do Murilo, Nexus, Bacon Burguer…</span></li>
-      <li style="--n:6"><span class="stat__name">Supabase</span><span class="stat__n mono">6</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Login e sync no Banco, Frangão, Nexus, Grimório, Galeria CEAC.</span></li>
-      <li style="--n:3"><span class="stat__name">TypeScript + React</span><span class="stat__n mono">3</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Frangão, Grimório da Campanha, CameraPet app.</span></li>
-      <li style="--n:2"><span class="stat__name">Canvas + Web Audio</span><span class="stat__n mono">2</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Os dois jogos: Bram e Arroz Dourado.</span></li>
-      <li style="--n:2"><span class="stat__name">PWA offline</span><span class="stat__n mono">2</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Banco do Murilo e Frangão instalam no celular.</span></li>
-      <li style="--n:2"><span class="stat__name">Tailwind</span><span class="stat__n mono">2</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Grimório da Campanha e CameraPet app.</span></li>
-      <li style="--n:1"><span class="stat__name">Next.js</span><span class="stat__n mono">1</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Grimório da Campanha.</span></li>
-      <li style="--n:1"><span class="stat__name">Mercado Pago (Pix)</span><span class="stat__n mono">1</span><span class="stat__bar mono" data-plus></span><span class="stat__where">A rifa do Nexus.</span></li>
-      <li style="--n:1"><span class="stat__name">Vitest</span><span class="stat__n mono">1</span><span class="stat__bar mono" data-plus></span><span class="stat__where">Os testes do Frangão.</span></li>
-    </ul>
-    <p class="stat__total mono">12 linhas alteradas, 0 removidas. Próximo commit: back-end e Python.</p>
-  </section>
-
-  <section class="about" id="sobre" data-ref="sobre">
-    <div class="about__text">
-      <h2 class="display" data-node="main">Sobre mim</h2>
-      <p>Sou o Murilo, estudante do Ensino Médio Técnico em Informática no Senac São Paulo. Aprendo desenvolvimento web na prática, construindo projetos de verdade: o jogo com trilha gerada em código, o app que eu mesmo uso para cuidar do meu dinheiro, o site da banda que vende rifa por Pix.</p>
-      <p>Meu foco é o front-end: estrutura, design de interface e experiência de quem usa. Quando o projeto pede back-end e banco de dados, uso IA como apoio e aprendo no caminho. E mantenho o <a href="https://quintal-do-murilo.vercel.app" target="_blank" rel="noopener">Quintal do Murilo</a>, onde faço tudo sozinho, sem IA, só eu e o Google.</p>
-      <p>Procuro uma vaga de <strong>Jovem Aprendiz ou estágio em TI, meio período</strong>, presencial, híbrida ou remota.</p>
-      <dl class="config mono">
-        <div><dt>user.name</dt><dd>Murilo Neves Teixeira</dd></div>
-        <div><dt>user.escola</dt><dd>Senac São Paulo · Técnico em Informática</dd></div>
-        <div><dt>user.cidade</dt><dd>São Paulo, SP</dd></div>
-        <div><dt>user.busca</dt><dd>Jovem Aprendiz ou estágio em TI</dd></div>
-        <div><dt>core.editor</dt><dd>HTML · CSS · JavaScript · Git</dd></div>
-      </dl>
+        <div class="card__body">
+          <p class="card__tags mono"><span>Site</span><span>Hamburgueria</span></p>
+          <h3 class="card__title">Bacon Burguer</h3>
+          <p class="card__desc">Site vitrine com cara de cartaz de letrista: placa de aberto/fechado que segue o horário, cardápio em abas e barra de pedido no celular.</p>
+          <ul class="card__stack mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="card__links">
+            <a class="link" href="https://baconburguer.vercel.app" target="_blank" rel="noopener">Ver site <svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a>
+            <a class="link link--muted" href="https://github.com/parmurus1/BaconBurguer" target="_blank" rel="noopener">Código <svg class="i"><use href="#i-github"/></svg><span class="sr">(abre em nova aba)</span></a>
+          </div>
+        </div>
+      </article>
     </div>
-    <div class="term" data-term>
-      <p class="term__bar mono"><span>bash</span><span>visitante@portfolio-do-murilo</span></p>
+
+    <h3 class="more__title reveal">Outros projetos</h3>
+    <ul class="more">
+      <li class="reveal"><a href="https://tlp-blue.vercel.app" target="_blank" rel="noopener"><span class="more__name">Grimório da Campanha</span><span class="more__desc">Fichas de RPG com criação passo a passo, rolagem de dados e visão do mestre.</span><span class="more__tech mono">Next.js · Supabase · Tailwind</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
+      <li class="reveal"><a href="https://igrejaceac.vercel.app" target="_blank" rel="noopener"><span class="more__name">Galeria CEAC</span><span class="more__desc">Voluntário: galeria de fotos e vídeos com pastas, lightbox e painel admin com autenticação.</span><span class="more__tech mono">JavaScript · Supabase</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
+      <li class="reveal"><a href="https://arroz-omega.vercel.app" target="_blank" rel="noopener"><span class="more__name">Arroz Dourado</span><span class="more__desc">Jogo em três atos: dívida com a Tríade, grãos de arroz, kart, ritmo, luta e terror.</span><span class="more__tech mono">JavaScript · Canvas</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
+      <li class="reveal"><a href="https://fearlessenglish.vercel.app" target="_blank" rel="noopener"><span class="more__name">Fearless English</span><span class="more__desc">Página única para uma professora de inglês captar alunas.</span><span class="more__tech mono">HTML · CSS</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
+      <li class="reveal"><a href="https://parmurus1.github.io/CameraPet/" target="_blank" rel="noopener"><span class="more__name">CameraPet</span><span class="more__desc">Projeto em grupo: IA que procura pets perdidos nas câmeras do SmartSampa.</span><span class="more__tech mono">HTML · CSS</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
+      <li class="reveal"><a href="https://parmurus1.github.io/DataEllo/" target="_blank" rel="noopener"><span class="more__name">DataEllo</span><span class="more__desc">Projeto da escola: empresa fictícia que organiza bancos de dados com IA.</span><span class="more__tech mono">HTML · CSS · JS</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
+    </ul>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section about" id="sobre">
+    <div class="about__text reveal">
+      <h2 class="section__title">Sobre mim</h2>
+      <p>Sou o Murilo, estudante do Ensino Médio Técnico em Informática no <strong>Senac São Paulo</strong>. Aprendo desenvolvimento web na prática, construindo projetos de verdade: o jogo com trilha gerada em código, o app que eu mesmo uso para cuidar do meu dinheiro, o site da banda que vende rifa por Pix.</p>
+      <p>Meu foco é o front-end: estrutura, interface e a experiência de quem usa. Quando o projeto pede back-end e banco de dados, uso IA como apoio e aprendo no caminho. E mantenho o Quintal do Murilo, onde faço tudo sozinho, sem IA.</p>
+      <p>Procuro uma vaga de <strong>Jovem Aprendiz ou estágio em TI, meio período</strong>, presencial, híbrida ou remota.</p>
+      <ul class="about__cards">
+        <li><svg class="i"><use href="#i-cap"/></svg><div><b>Senac São Paulo</b><span>Ensino Médio Técnico em Informática</span></div></li>
+        <li><svg class="i"><use href="#i-trophy"/></svg><div><b>Campeão OBAFOG 2026</b><span>3 medalhas de ouro com a equipe</span></div></li>
+      </ul>
+    </div>
+
+    <div class="term reveal" data-term>
+      <div class="term__bar">
+        <span class="editor__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="mono">terminal</span>
+      </div>
       <div class="term__out mono" data-term-out aria-live="polite">
-        <p>Bem-vindo ao terminal do Murilo. Digite <b>help</b> e aperte Enter.</p>
+        <p class="dim">Terminal interativo. Digite <b>help</b> e aperte Enter.</p>
       </div>
       <form class="term__form mono" data-term-form autocomplete="off">
-        <label for="term-input"><span class="term__ps">visitante@portfolio:~$</span><span class="sr">Comando do terminal</span></label>
+        <label for="term-input"><span class="term__ps">~/murilo $</span><span class="sr">Comando do terminal</span></label>
         <input id="term-input" name="cmd" spellcheck="false" autocapitalize="off" enterkeyhint="send" placeholder="help">
       </form>
       <div class="term__chips" aria-label="Sugestões de comandos">
         <button type="button" data-cmd="help">help</button>
         <button type="button" data-cmd="projetos">projetos</button>
-        <button type="button" data-cmd="git status">git status</button>
         <button type="button" data-cmd="sudo contratar">sudo contratar</button>
         <button type="button" data-cmd="frango">frango</button>
       </div>
     </div>
-    <div class="journey">
-      <h3 class="journey__title" data-node="main">Trajetória</h3>
-      <p class="section-head__cmd mono">git log --since=2026 --author="Murilo"</p>
-      <ol class="journey__list">
-        <li data-node="main"><time class="mono" datetime="2026-10">out 2026</time><p><b>Rede para um grande evento.</b> Planejei a infraestrutura de rede de um evento no Packet Tracer, no Senac.</p></li>
-        <li data-node="main" class="journey__star"><time class="mono" datetime="2026-09">set 2026</time><p><b>Campeão da OBAFOG.</b> Três medalhas de ouro com a minha equipe na Olimpíada Brasileira de Astronomia e Astronáutica; um dos times do Senac Nações Unidas ficou no top 10 nacional.</p></li>
-        <li data-node="main"><time class="mono" datetime="2026-09">set 2026</time><p><b>Sensibilização para a Segurança Digital.</b> Certificado Cisco Networking Academy pelo Senac SP Nações Unidas.</p></li>
-        <li data-node="main"><time class="mono" datetime="2026-08">ago 2026</time><p><b>O Quintal viralizou.</b> O post sobre o site que fiz sem IA passou de 116 mil impressões e 1,1 mil reações.</p></li>
-        <li data-node="main"><time class="mono" datetime="2026-08">ago 2026</time><p><b>Ética na Era da IA.</b> Certificado da Fundação Bradesco.</p></li>
-        <li data-node="main"><time class="mono" datetime="2026-07">jul 2026</time><p><b>Dev front-end voluntário na CEAC.</b> Galeria de fotos e vídeos com pastas, lightbox e painel admin com autenticação.</p></li>
-        <li data-node="main"><time class="mono" datetime="2026-06">jun 2026</time><p><b>Apresentei o CameraPet</b> com meu grupo: IA que procura pets perdidos nas câmeras públicas do SmartSampa.</p></li>
-        <li data-node="main"><time class="mono" datetime="2026-03">mar 2026</time><p><b>Dev front-end freelance na Nexus Band.</b> Primeiro produto entregue para um cliente externo, dentro do prazo combinado.</p></li>
-      </ol>
+  </section>
+
+  <!-- TRAJETÓRIA -->
+  <section class="section" id="trajetoria">
+    <header class="section__head reveal">
+      <h2 class="section__title">Trajetória</h2>
+      <p class="section__lede">O que rolou em 2026, do mais recente ao mais antigo.</p>
+    </header>
+    <ol class="timeline" data-timeline>
+      <li class="reveal"><time class="mono" datetime="2026-10">Out 2026</time><h3>Projeto de rede para um grande evento</h3><p>Planejei a infraestrutura de rede de um evento no Packet Tracer, no Senac.</p></li>
+      <li class="reveal is-star"><time class="mono" datetime="2026-09">Set 2026</time><h3>Campeão da OBAFOG</h3><p>Três medalhas de ouro com a minha equipe na Olimpíada Brasileira de Astronomia e Astronáutica; um dos times do Senac Nações Unidas ficou no top 10 nacional.</p></li>
+      <li class="reveal"><time class="mono" datetime="2026-09">Set 2026</time><h3>Sensibilização para a Segurança Digital</h3><p>Certificado Cisco Networking Academy pelo Senac SP Nações Unidas.</p></li>
+      <li class="reveal"><time class="mono" datetime="2026-08">Ago 2026</time><h3>O Quintal viralizou</h3><p>O post sobre o site que fiz sem IA passou de 116 mil impressões e 1,1 mil reações.</p></li>
+      <li class="reveal"><time class="mono" datetime="2026-08">Ago 2026</time><h3>Ética na Era da IA</h3><p>Certificado da Fundação Bradesco.</p></li>
+      <li class="reveal"><time class="mono" datetime="2026-07">Jul 2026</time><h3>Dev front-end voluntário na CEAC</h3><p>Galeria de fotos e vídeos com navegação por pastas, lightbox e painel admin com autenticação via Supabase.</p></li>
+      <li class="reveal"><time class="mono" datetime="2026-06">Jun 2026</time><h3>Apresentação do CameraPet</h3><p>Com meu grupo: IA que procura pets perdidos nas câmeras públicas do SmartSampa.</p></li>
+      <li class="reveal"><time class="mono" datetime="2026-03">Mar 2026</time><h3>Dev front-end freelance na Nexus Band</h3><p>Primeiro produto entregue para um cliente externo, dentro do prazo combinado.</p></li>
+    </ol>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <header class="section__head reveal">
+      <h2 class="section__title">Stack</h2>
+      <p class="section__lede">O que eu uso nos meus 16 repositórios públicos.</p>
+    </header>
+    <div class="skills">
+      <div class="skills__group reveal">
+        <h3>Front-end</h3>
+        <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Tailwind</li><li>Canvas</li><li>Web Audio</li><li>PWA</li></ul>
+      </div>
+      <div class="skills__group reveal">
+        <h3>Back-end e dados</h3>
+        <ul class="chips"><li>Supabase</li><li>Node.js</li><li>PostgreSQL</li><li>Mercado Pago (Pix)</li></ul>
+      </div>
+      <div class="skills__group reveal">
+        <h3>Ferramentas</h3>
+        <ul class="chips"><li>Git</li><li>GitHub</li><li>Vercel</li><li>Vite</li><li>Vitest</li><li>Packet Tracer</li></ul>
+      </div>
     </div>
   </section>
 
-  <section class="contact" id="contato" data-ref="contato">
-    <h2 class="contact__title" data-node="root">Bora dar merge?</h2>
-    <p class="contact__lede">Tem uma vaga de Jovem Aprendiz ou estágio, um projeto ou uma ideia meio maluca? Me chama que eu respondo.</p>
-    <div class="contact__actions">
-      <a class="btn btn--ink" href="mailto:parmurus@gmail.com" data-push>Mandar e-mail <svg class="i"><use href="#i-mail"/></svg></a>
-      <button class="btn btn--outline" type="button" data-copy="parmurus@gmail.com"><span data-copy-label>Copiar e-mail</span> <svg class="i"><use href="#i-copy"/></svg></button>
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="cta reveal" data-glow>
+      <h2 class="cta__title">Vamos construir algo juntos?</h2>
+      <p class="cta__lede">Tem uma vaga de Jovem Aprendiz ou estágio, um projeto ou uma ideia? Me chama que eu respondo.</p>
+      <div class="cta__actions">
+        <a class="btn btn--light" href="mailto:parmurus@gmail.com"><svg class="i"><use href="#i-mail"/></svg> parmurus@gmail.com</a>
+        <button class="btn btn--ghost" type="button" data-copy="parmurus@gmail.com"><svg class="i" data-copy-icon><use href="#i-copy"/></svg><span data-copy-label>Copiar e-mail</span></button>
+      </div>
+      <div class="cta__social">
+        <a href="https://github.com/parmurus1" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg>GitHub<span class="sr">(abre em nova aba)</span></a>
+        <a href="https://www.linkedin.com/in/murilonevesteixeira/" target="_blank" rel="noopener"><svg class="i"><use href="#i-linkedin"/></svg>LinkedIn<span class="sr">(abre em nova aba)</span></a>
+      </div>
     </div>
-    <pre class="contact__push mono" data-push-out aria-live="polite"></pre>
-    <ul class="contact__links">
-      <li><a href="https://github.com/parmurus1" target="_blank" rel="noopener"><svg class="i i--brand"><use href="#i-github"/></svg><span>github.com/parmurus1</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-      <li><a href="https://www.linkedin.com/in/murilonevesteixeira/" target="_blank" rel="noopener"><svg class="i i--brand"><use href="#i-linkedin"/></svg><span><span class="hide-sm">linkedin.com/</span>in/murilonevesteixeira</span><svg class="i"><use href="#i-arrow"/></svg><span class="sr">(abre em nova aba)</span></a></li>
-      <li><a href="mailto:parmurus@gmail.com"><svg class="i i--brand"><use href="#i-mail"/></svg><span>parmurus@gmail.com</span><svg class="i"><use href="#i-arrow"/></svg></a></li>
-    </ul>
   </section>
 </main>
 
-<footer class="foot mono">
-  <p><span class="hash">*</span> Initial commit · São Paulo, 2026</p>
-  <p>Murilo Neves Teixeira. Feito com HTML, CSS e JavaScript, sem framework.</p>
-  <a href="#topo">Voltar ao topo <svg class="i"><use href="#i-up"/></svg></a>
+<footer class="foot">
+  <p>© 2026 Murilo Neves Teixeira</p>
+  <p class="mono">Feito com HTML, CSS e JavaScript</p>
 </footer>
 
-<script src="js/hero.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

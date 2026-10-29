@@ -56,6 +56,8 @@ Undecided: age, school/course, job history, certifications (LinkedIn unreadable)
 - He gravitates to early-2000s desktop OS aesthetics (Windows 7 start menu in Quintal, Windows XP in Banco do Murilo) and to games, humour and pt-BR casual tone.
 - Requested: "BEM bonito", full of animations, surprising, programming theme.
 
+- Standing visual preference (Oct 2026): the owner rejected the bespoke "git log graph on cobalt" world (colors and layout) and chose the classic developer-portfolio canon, executed at premium polish (Vercel/Linear level, Brittany Chiang clarity): dark ground, clean type, large project cards with real screenshots.
+
 ## Evidence on Hand
 
 Real repositories and live projects listed above. No testimonials, client quotes, metrics, employers or certificates are available; none may be invented.
