@@ -373,7 +373,7 @@ strong, b { font-weight: 600; color: var(--text); }
 .term__form { display: flex; align-items: center; gap: 10px; padding: 8px 18px 14px; font-size: 0.82rem; }
 .term__ps { color: var(--accent); white-space: nowrap; }
 .term__form input { flex: 1; min-width: 0; padding: 6px 0; background: transparent; border: 0; outline: 0; color: var(--text); font: inherit; caret-color: var(--accent); }
-.term__form input::placeholder { color: #52525b; }
+.term__form input::placeholder { color: var(--faint); }
 .term__chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 18px 18px; border-top: 1px solid var(--border); }
 .term__chips button {
   font-family: var(--mono); font-size: 0.76rem; padding: 6px 12px; border-radius: 999px; cursor: pointer;

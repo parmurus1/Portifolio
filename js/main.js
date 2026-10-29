@@ -15,7 +15,7 @@
   /* ---------------- nav ---------------- */
   const nav = $('[data-nav]');
   const navLinks = $$('.nav__links a');
-  const sections = navLinks.map((a) => $(a.getAttribute('href'))).filter(Boolean);
+  const sections = [...navLinks.map((a) => $(a.getAttribute('href'))), $('#contato')].filter(Boolean);
   const onScroll = () => {
     nav.classList.toggle('is-scrolled', scrollY > 24);
     let current = null;

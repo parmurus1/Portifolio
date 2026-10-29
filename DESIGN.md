@@ -1,367 +1,343 @@
 ---
-name: Murilo Neves Teixeira · portfólio
-description: A git log --graph printed on cobalt; every project is a branch that forks from main, takes real commits and merges back.
+name: Murilo Neves Teixeira · Portfólio
+description: Classic developer portfolio at product-grade polish. Deep black ground, graphite surfaces, one electric-indigo light, real screenshots of shipped work.
 colors:
-  cobalt-ground: "#141d8a"
-  graph-ink: "#0a0f3d"
-  chalk: "#f5f3ee"
-  periwinkle-muted: "#bcc4f6"
-  hairline: "rgba(196, 204, 255, 0.16)"
-  paper: "#eef0f8"
-  ink-muted: "#3a4280"
-  yolk: "#ffd23f"
-  ember: "#ff6a3d"
-  mint: "#3ddc84"
-  pink: "#ff4fa3"
-  sky: "#44d7ff"
-  lilac: "#b49bff"
-  ember-deep: "#c2410c"
-  mint-deep: "#0b6b37"
-  yolk-umber: "#4b3d07"
+  electric-indigo: "#7c8cff"
+  indigo-wash: "rgba(124, 140, 255, 0.16)"
+  trophy-gold: "#ffc83d"
+  signal-green: "#4ade80"
+  aurora-indigo: "#4f46e5"
+  aurora-teal: "#0e7490"
+  deep-black: "#09090b"
+  graphite: "#111114"
+  graphite-raised: "#17171b"
+  hairline: "rgba(255, 255, 255, 0.08)"
+  hairline-strong: "rgba(255, 255, 255, 0.14)"
+  zinc-white: "#f4f4f5"
+  zinc-muted: "#a1a1aa"
+  zinc-faint: "#8b8b95"
+  separator-graphite: "#3f3f46"
+  gutter-gray: "#52525b"
 typography:
-  display-hero:
-    fontFamily: "Bricolage Grotesque, Arial Narrow, sans-serif"
-    fontSize: "clamp(3.4rem, 10.5vw, 6rem)"
-    fontWeight: 800
-    lineHeight: 0.88
-    letterSpacing: "-0.025em"
-    fontVariation: "'wdth' 75"
   display:
-    fontFamily: "Bricolage Grotesque, Arial Narrow, sans-serif"
-    fontSize: "clamp(3rem, 8vw, 5.75rem)"
-    fontWeight: 800
-    lineHeight: 0.9
-    letterSpacing: "-0.025em"
-    fontVariation: "'wdth' 75"
+    fontFamily: "Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "clamp(2.9rem, 6vw, 4.6rem)"
+    fontWeight: 700
+    lineHeight: 0.98
+    letterSpacing: "-0.04em"
   headline:
-    fontFamily: "Bricolage Grotesque, Arial Narrow, sans-serif"
-    fontSize: "clamp(2.4rem, 4.6vw, 4rem)"
-    fontWeight: 800
-    lineHeight: 0.95
-    letterSpacing: "-0.02em"
-    fontVariation: "'wdth' 75"
-  title:
-    fontFamily: "Bricolage Grotesque, Arial Narrow, sans-serif"
-    fontSize: "1.55rem"
-    fontWeight: 800
+    fontFamily: "Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "clamp(2.1rem, 4.4vw, 3.2rem)"
+    fontWeight: 700
     lineHeight: 1.05
-    letterSpacing: "-0.01em"
-    fontVariation: "'wdth' 80"
+    letterSpacing: "-0.035em"
+  title:
+    fontFamily: "Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "1.45rem"
+    fontWeight: 650
+    lineHeight: 1.2
+    letterSpacing: "-0.025em"
   lede:
-    fontFamily: "Bricolage Grotesque, system-ui, sans-serif"
-    fontSize: "clamp(1.2rem, 2.1vw, 1.55rem)"
-    fontWeight: 500
-    lineHeight: 1.35
-    letterSpacing: "-0.01em"
-  body:
-    fontFamily: "Bricolage Grotesque, system-ui, sans-serif"
-    fontSize: "1.0625rem"
+    fontFamily: "Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "clamp(1.08rem, 1.5vw, 1.22rem)"
     fontWeight: 400
     lineHeight: 1.6
-  button:
-    fontFamily: "Bricolage Grotesque, Arial Narrow, sans-serif"
-    fontSize: "1.05rem"
-    fontWeight: 700
-    lineHeight: 1.2
+  body:
+    fontFamily: "Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "1.0625rem"
+    fontWeight: 400
+    lineHeight: 1.65
+  label:
+    fontFamily: "Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "0.97rem"
+    fontWeight: 550
+    lineHeight: 1
     letterSpacing: "-0.005em"
-  mono-label:
-    fontFamily: "Martian Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: "0.74rem"
+  mono:
+    fontFamily: "Geist Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: "0.78rem"
     fontWeight: 400
     lineHeight: 1.7
-    fontVariation: "'wdth' 87.5"
-  mono-ref:
-    fontFamily: "Martian Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: "0.72rem"
-    fontWeight: 700
-    lineHeight: 1.2
-    fontVariation: "'wdth' 87.5"
 rounded:
-  pill: "999px"
-  plate: "22px"
-  terminal: "20px"
-  panel: "16px"
+  focus: "8px"
   inset: "12px"
-  row: "10px"
-  focus: "6px"
+  tile: "16px"
+  panel: "20px"
+  pill: "999px"
 spacing:
-  gutter: "128px"
-  gutter-compact: "46px"
-  edge: "clamp(16px, 4vw, 64px)"
-  section: "clamp(96px, 14vh, 150px)"
-  nav: "60px"
-  nav-compact: "54px"
-  stack-sm: "12px"
-  stack-md: "22px"
+  xs: "8px"
+  sm: "12px"
+  md: "20px"
+  lg: "24px"
+  xl: "48px"
+  gutter: "clamp(16px, 4vw, 40px)"
+  section: "clamp(88px, 12vw, 140px)"
 components:
   button-primary:
-    backgroundColor: "{colors.yolk}"
-    textColor: "{colors.graph-ink}"
-    typography: "{typography.button}"
+    backgroundColor: "{colors.zinc-white}"
+    textColor: "{colors.deep-black}"
+    typography: "{typography.label}"
     rounded: "{rounded.pill}"
-    padding: "0.85em 1.4em"
-    height: "52px"
+    padding: "0 1.25rem"
+    height: "46px"
   button-primary-hover:
-    backgroundColor: "{colors.chalk}"
-    textColor: "{colors.graph-ink}"
+    backgroundColor: "#ffffff"
+    textColor: "{colors.deep-black}"
   button-ghost:
-    backgroundColor: "transparent"
-    textColor: "{colors.chalk}"
-    typography: "{typography.button}"
+    backgroundColor: "rgba(255, 255, 255, 0.03)"
+    textColor: "{colors.zinc-white}"
+    typography: "{typography.label}"
     rounded: "{rounded.pill}"
-    padding: "0.85em 1.4em"
-    height: "52px"
+    padding: "0 1.25rem"
+    height: "46px"
   button-ghost-hover:
-    backgroundColor: "{colors.chalk}"
-    textColor: "{colors.graph-ink}"
-  button-ink:
-    backgroundColor: "{colors.graph-ink}"
-    textColor: "{colors.chalk}"
-    typography: "{typography.button}"
+    backgroundColor: "rgba(255, 255, 255, 0.08)"
+    textColor: "{colors.zinc-white}"
+  button-small:
     rounded: "{rounded.pill}"
-    padding: "0.85em 1.4em"
-    height: "52px"
-  button-outline:
-    backgroundColor: "transparent"
-    textColor: "{colors.graph-ink}"
-    typography: "{typography.button}"
+    padding: "0 1rem"
+    height: "38px"
+  nav-bar-scrolled:
+    backgroundColor: "rgba(17, 17, 20, 0.72)"
     rounded: "{rounded.pill}"
-    padding: "0.85em 1.4em"
-    height: "52px"
-  button-outline-hover:
-    backgroundColor: "{colors.graph-ink}"
-    textColor: "{colors.chalk}"
-  ref-head:
-    backgroundColor: "{colors.yolk}"
-    textColor: "{colors.graph-ink}"
-    typography: "{typography.mono-ref}"
-    rounded: "{rounded.pill}"
-    padding: "0.28em 0.75em 0.3em"
-  ref-open:
-    backgroundColor: "{colors.mint}"
-    textColor: "{colors.graph-ink}"
-    typography: "{typography.mono-ref}"
-    rounded: "{rounded.pill}"
-    padding: "0.28em 0.75em 0.3em"
-  ref-remote:
-    backgroundColor: "transparent"
-    textColor: "{colors.chalk}"
-    typography: "{typography.mono-ref}"
-    rounded: "{rounded.pill}"
-    padding: "0.28em 0.75em 0.3em"
+    height: "60px"
   nav-link:
-    backgroundColor: "transparent"
-    textColor: "{colors.periwinkle-muted}"
+    textColor: "{colors.zinc-muted}"
     rounded: "{rounded.pill}"
-    padding: "8px 12px"
+    padding: "8px 14px"
   nav-link-active:
-    backgroundColor: "{colors.chalk}"
-    textColor: "{colors.graph-ink}"
-  terminal:
-    backgroundColor: "{colors.graph-ink}"
-    textColor: "{colors.chalk}"
-    typography: "{typography.mono-label}"
-    rounded: "{rounded.terminal}"
-  terminal-chip:
-    backgroundColor: "transparent"
-    textColor: "{colors.periwinkle-muted}"
-    rounded: "{rounded.pill}"
-    padding: "7px 12px"
-  terminal-chip-hover:
-    backgroundColor: "{colors.yolk}"
-    textColor: "{colors.graph-ink}"
-  config-panel:
-    backgroundColor: "{colors.graph-ink}"
-    textColor: "{colors.chalk}"
-    typography: "{typography.mono-label}"
+    backgroundColor: "rgba(255, 255, 255, 0.07)"
+    textColor: "{colors.zinc-white}"
+  card-project:
+    backgroundColor: "{colors.graphite}"
+    textColor: "{colors.zinc-white}"
     rounded: "{rounded.panel}"
-    padding: "18px 20px"
-  oneline-row-hover:
-    backgroundColor: "{colors.graph-ink}"
-    textColor: "{colors.chalk}"
+    padding: "22px 24px 24px"
+  card-project-shot:
+    backgroundColor: "{colors.graphite-raised}"
     rounded: "{rounded.inset}"
-    padding: "20px 14px"
-  stat-row-hover:
-    backgroundColor: "{colors.graph-ink}"
-    textColor: "{colors.yolk}"
-    rounded: "{rounded.row}"
-    padding: "12px 14px"
+  list-row:
+    backgroundColor: "rgba(255, 255, 255, 0.02)"
+    rounded: "{rounded.tile}"
+    padding: "18px 20px"
+  list-row-hover:
+    backgroundColor: "rgba(255, 255, 255, 0.05)"
+  chip:
+    backgroundColor: "rgba(255, 255, 255, 0.03)"
+    textColor: "{colors.zinc-muted}"
+    rounded: "{rounded.pill}"
+    padding: "6px 12px"
+  chip-hover:
+    backgroundColor: "{colors.indigo-wash}"
+    textColor: "{colors.zinc-white}"
+  badge-status:
+    backgroundColor: "rgba(74, 222, 128, 0.08)"
+    textColor: "#bbf7d0"
+    rounded: "{rounded.pill}"
+    padding: "8px 14px 8px 12px"
+  window-editor:
+    backgroundColor: "{colors.graphite-raised}"
+    textColor: "{colors.zinc-white}"
+    typography: "{typography.mono}"
+    rounded: "{rounded.panel}"
+  window-terminal:
+    backgroundColor: "#0c0c0f"
+    textColor: "{colors.zinc-white}"
+    typography: "{typography.mono}"
+    rounded: "{rounded.panel}"
+  input-terminal:
+    backgroundColor: "transparent"
+    textColor: "{colors.zinc-white}"
+    typography: "{typography.mono}"
+    padding: "6px 0"
+  panel-group:
+    backgroundColor: "{colors.graphite}"
+    rounded: "{rounded.panel}"
+    padding: "24px"
 ---
 
-# Design System: Murilo Neves Teixeira · portfólio
+# Design System: Murilo Neves Teixeira · Portfólio
 
 ## Overview
 
-**Creative North Star: "The Log Printed on Cobalt"**
+**Creative North Star: "The Midnight Workbench"**
 
-The whole site is one `git log --graph` that prints itself as you scroll. A thick, ink-cased rail runs down a fixed left gutter; the HEAD marker (a yolk node with a `HEAD` tag) rides it with the scroll position; each featured project forks off `main` on its own colored lane, collects its feature list as commits, and merges back with a literal `Merge branch 'feat/…' into main` line. The hero is a live canvas graph the visitor can grow by moving and clicking. Programming is the material, not a costume: hashes are real commits, the nav carries a typed shell prompt and a `HEAD → <section>` readout, and the about section holds a working terminal.
+A developer's desk at night: the room is deep black, the furniture is graphite, and the only light in it is an electric-indigo glow that falls on whatever is being worked on. The system is the classic developer-portfolio canon (dark ground, clean grotesque type, large project cards with real screenshots) executed at product polish, Vercel and Linear in finish, Brittany Chiang in clarity. Its tools are part of the furniture: a code editor that types, a terminal that answers, a timeline that fills as you scroll. Programming shows up as working instruments, never as costume.
 
-The world sits on a deep cobalt floor (never black), printed in chalk and ink, and lit by six saturated lane colors borrowed from the graph. Three sections leave the cobalt and become full-bleed bands of paper, yolk and ember, so the scroll reads as a printout changing stock. Type is a two-voice system: Bricolage Grotesque condensed to 75% width at weight 800 shouts names and headings, and Martian Mono reports everything the machine would print (hashes, refs, commands, counts, dates). Density is generous: big section padding, long single columns of log lines, one project per screen-and-a-half.
+Density is calm and generous: one centered 1160px column, big type with tight tracking, wide section breathing room, cards that hold a full screenshot. Surfaces are near-flat graphite separated from the black by 8% white hairlines; depth comes from soft, deep, negative-spread shadows and from light that follows the pointer. Motion is constant but quiet: a slow aurora drift behind everything, blur-to-sharp reveals on scroll, a pointer-tracked glow on cards, all of it collapsed under reduced motion.
 
-The direction contract explicitly refuses the "black terminal + glowing cards" portfolio. The build honors that: terminals exist, but as ink objects sitting on cobalt, and there are no glows, glass cards or gradient fills anywhere outside the hero's legibility veil.
+The owner rejected the earlier bespoke "git log graph on cobalt" world on color and layout and chose this canon deliberately. The names in this file (North Star, color names) were derived from the build's direction contract, not confirmed with the owner. One divergence from the contract is recorded as built: the contract allows a single indigo accent, while the build also lets each project card wear its own hue, uses gold for achievement and green for availability. Those are written down below as scoped rules.
 
 **Key Characteristics:**
-- Cobalt ground with an ink-cased commit rail in a fixed left gutter on every section.
-- One lane color per project branch, carried by every lane-colored element of that project.
-- Full-bleed paper, yolk and ember bands as section grounds.
-- Condensed 800-weight Bricolage display against Martian Mono machine output.
-- Pills for every ref, button, nav link and chip; generously rounded plates for screenshots.
-- Motion that prints: nodes scale in, log lines light up as HEAD passes, plates unroll top-down, `+` bars type out.
+- Dark-only (color-scheme: dark): deep black ground, two graphite surface steps, white-alpha hairlines.
+- One electric-indigo light for focus, glow, caret, prompt and emphasis; never a filled button.
+- Near-white pill as the primary action; translucent pill as the secondary.
+- Geist for everything human, Geist Mono for everything machine (code, dates, tags, stacks).
+- Real screenshots of shipped work inside large 20px-radius cards with a pointer-lit border.
+- Working dev instruments as signature pieces: typing editor, interactive terminal, scroll-filled timeline.
+- Atmospheric backdrop: fixed indigo and teal aurora over a masked 64px grid.
 
 ## Colors
 
-A cobalt-and-ink ground lit by a six-color lane palette, with yolk reserved for "where you are now".
+A near-monochrome zinc-and-black palette carrying a single cool light, with two small semantic hues held in reserve.
 
 ### Primary
-- **Yolk** (#ffd23f): HEAD. The HEAD node and its pulsing ring, the `HEAD → main` ref, the primary button, the second line of the hero name, every hash on cobalt, the focus ring, text selection, the scrollbar thumb, the typing caret, terminal commands. Also the full-bleed ground of the "O que eu uso" band.
+- **Electric Indigo** (`electric-indigo`): the light source. Focus rings, the typing caret, the terminal prompt, the hero role line, active timeline dots and the filled timeline rail, the nav logo glyph, about-card icons, text selection, and the radial glows on the editor, cards and contact panel. Contrast on the deep-black ground is about 6.7:1, so it is legible as text.
+- **Indigo Wash** (`indigo-wash`): the same indigo at 16% alpha. Hover fill for chips, the outer ring around the primary button on hover, the halo around an active timeline dot.
 
 ### Secondary
-- **Ember** (#ff6a3d): the closing band. The full-bleed ground of the contact section ("Bora dar merge?") and the Bram lane; the second node in the logo mark.
-- **Mint** (#3ddc84): "alive and open". The `open-to-work` ref, the pulsing status dot, the shell path in the prompt and terminal; the Banco do Murilo lane.
+- **Trophy Gold** (`trophy-gold`): achievement and progress only. The starred timeline milestone (the championship), the Frangão mascot's stage name and XP bar.
 
-### Tertiary (lane palette)
-- **Sky** (#44d7ff), **Pink** (#ff4fa3), **Lilac** (#b49bff): lane colors for Quintal, Nexus and Bacon Burguer; sky also marks config keys and links inside the terminal. Together with yolk, ember and mint they form the six-color lane set the hero canvas cycles through.
+### Tertiary
+- **Signal Green** (`signal-green`): availability. The pinging dot of the "available for work" badge, with its pale-green text and 8% green fill.
 
-### Deep variants (accent text on light bands)
-- **Ember Deep** (#c2410c): commit hashes on the paper band, where yolk would vanish.
-- **Mint Deep** (#0b6b37): the `+` stat bars and the totals on the yolk band.
-- **Yolk Umber** (#4b3d07): secondary copy and the total line on the yolk band.
+### Atmosphere
+- **Aurora Indigo** (`aurora-indigo`) and **Aurora Teal** (`aurora-teal`): two heavily blurred (90px) drifting blobs fixed behind the top of the viewport at 50% and 38% opacity. Aurora Indigo also tints the top of the contact panel at 28% alpha. They are backdrop light, never applied to UI elements.
 
 ### Neutral
-- **Cobalt Ground** (#141d8a): the page floor, the nav (at 94% opacity), the hero veil. Also the `theme-color`.
-- **Graph Ink** (#0a0f3d): the casing stroke around every rail and node, text on every light ground and on every lane-colored fill, and the body of ink objects (terminal, config panel, footer, ink button).
-- **Chalk** (#f5f3ee): primary text on cobalt and ink, the `main` rail, fork/merge nodes, the hover sweep inside buttons, the active nav pill.
-- **Periwinkle Muted** (#bcc4f6): secondary text on cobalt and ink (meta lines, command sublines, captions, inactive nav).
-- **Hairline** (rgba(196, 204, 255, 0.16)): dashed log dividers, nav underline, the HEAD readout border.
-- **Paper** (#eef0f8): the full-bleed ground of the "Mais no log" band.
-- **Ink Muted** (#3a4280): secondary text on paper.
+- **Deep Black** (`deep-black`): page ground, primary-button text, theme-color.
+- **Graphite** (`graphite`): first surface step. Project cards, skill groups, about cards, the contact panel.
+- **Raised Graphite** (`graphite-raised`): second surface step. Screenshot frames inside cards, the editor body, the nav logo tile.
+- **Hairline** (`hairline`) and **Strong Hairline** (`hairline-strong`): 8% and 14% white borders. Hairline separates surfaces from the ground and splits window bars; Strong Hairline outlines windows, ghost buttons, chips in the terminal, and the contact panel.
+- **Zinc White** (`zinc-white`): headings, body emphasis, primary-button fill.
+- **Muted Zinc** (`zinc-muted`): body prose, ledes, card descriptions, inactive nav links, the second line of the hero name.
+- **Faint Zinc** (`zinc-faint`): metadata. Dates, stack lists, hero facts, marquee, footer, window language labels. About 5.9:1 on the ground.
+- **Separator Graphite** (`separator-graphite`): non-text marks. Marquee separator dots, the scrollbar thumb.
+- **Gutter Gray** (`gutter-gray`): code line numbers only. It is decorative and below text contrast; never set readable text in it.
 
 ### Named Rules
-**The Cobalt Floor Rule.** The page ground is cobalt (#141d8a), never black or near-black. Ink (#0a0f3d) is for objects placed on the floor (terminal, config, footer, casings), never for the floor itself.
+**The Light-Only Indigo Rule.** Electric Indigo is light, focus and emphasis. It glows, outlines, underlines a prompt and colors a short line of text; it never fills a button, a card or a section. The primary action is near-white, not indigo.
 
-**The One Lane, One Color Rule.** Each project branch sets a single `--lane` color, and every lane-colored element of that project (its rail, its commit nodes, its ref pill, its `+` marks, its screenshot plate, its primary button, its merge line) uses it. Text on a lane fill is always ink.
+**The Project Owns Its Hue Rule.** Inside a project card the accent is reassigned to that project's own hue (sky for Quintal, pink for Nexus, orange for Bram, gold for Frangão, green for Banco, lilac for Bacon Burguer). The card's tag pills, pointer-lit border and inner wash take that hue; outside cards the accent is always indigo. One hue per card, never two.
 
-**The Yolk Is HEAD Rule.** Yolk marks the current position and the main action: HEAD, primary button, focus, selection, caret. Do not spend it on decoration.
-
-**The Full-Bleed Band Rule.** Paper, yolk and ember appear as whole section grounds edge to edge, flat. They are never gradients, tinted cards or partial panels. On those bands, text is ink and accent text drops to its deep variant.
+**The Earned Gold Rule.** Trophy Gold marks something achieved or leveled up. It does not decorate.
 
 ## Typography
 
-**Display Font:** Bricolage Grotesque (variable: opsz 12–96, wdth 75–100, wght 300–800), falling back to Arial Narrow, sans-serif
-**Body Font:** Bricolage Grotesque, falling back to system-ui, sans-serif
-**Label/Mono Font:** Martian Mono (variable: wdth 87.5–112.5, wght 300–700), set at 87.5% width, falling back to ui-monospace, SFMono-Regular, Menlo
+**Display Font:** Geist (with ui-sans-serif, system-ui, -apple-system, Segoe UI fallback), variable 300 to 800
+**Body Font:** Geist, same stack
+**Label/Mono Font:** Geist Mono (with ui-monospace, SFMono-Regular, Menlo), 400 to 600
 
-**Character:** A loud, squeezed grotesque that sounds like a hand-painted sign, paired with a crisp, slightly narrowed mono that sounds like the terminal. The grotesque carries personality; the mono carries proof.
+**Character:** A single neutral grotesque used with conviction: heavy 700 headings pulled tight, quiet 400 prose, and an in-between 550 to 650 for controls and card titles that the variable font makes possible. Its monospace sibling handles every machine-shaped string so code and metadata read as one family with the prose.
 
 ### Hierarchy
-- **Display Hero** (800, wdth 75, clamp(3.4rem, 10.5vw, 6rem), line-height 0.88, -0.025em): the hero name (two lines, the second in yolk) and the contact title "Bora dar merge?" (which tightens to -0.03em and clamp up to 11vw). Balanced wrap.
-- **Display** (800, wdth 75, clamp(3rem, 8vw, 5.75rem), 0.9): section headings ("Projetos", "Mais no log", "O que eu uso", "Sobre mim").
-- **Headline** (800, wdth 75, clamp(2.4rem, 4.6vw, 4rem), 0.95, -0.02em): project titles and "Trajetória".
-- **Title** (800, wdth 80, 1.35–1.55rem, 1.05–1.1): row names in the oneline list and stat table; the nav wordmark at 1.25rem.
-- **Lede** (500, clamp(1.2rem, 2.1vw, 1.55rem), 1.35, -0.01em): the hero message (max 34ch) and the contact lede (max 40ch).
-- **Body** (400, 1.0625rem, 1.6): running copy; project descriptions and about paragraphs step up to 1.1rem. Measure 46ch for project descriptions, 58ch for about copy.
-- **Button** (700, 1.05rem, -0.005em): all buttons; the contact link list uses the same face at 700, wdth 85, clamp(1.15rem, 3vw, 2.1rem).
-- **Mono Label** (400, 0.72–0.78rem, wdth 87.5, line-height 1.7): hashes, command sublines, meta lines, stack lines, nav links, terminal output, dates, footer.
-- **Mono Ref** (700, 0.72rem): text inside filled ref pills.
+- **Display** (700, clamp(2.9rem, 6vw, 4.6rem), 0.98, -0.04em): the hero name only, set on two lines; the second line drops to Muted Zinc. Each line rises out of a clipping mask on load.
+- **Headline** (700, clamp(2.1rem, 4.4vw, 3.2rem), 1.05, -0.035em): section titles. The contact panel's question runs one step larger (up to 3.6rem, -0.04em, balanced, max 18ch).
+- **Title** (650, 1.45rem, 1.2, -0.025em): project card titles; wide cards scale to clamp(1.7rem, 2.6vw, 2.2rem). Smaller titles in the same register: timeline entries (600, 1.15rem, -0.015em), "other projects" heading (600, 1.2rem).
+- **Lede** (400, clamp(1.08rem, 1.5vw, 1.22rem), 1.6): hero lede, max 34rem, in Muted Zinc. Section ledes sit at 1.1rem.
+- **Body** (400, 1.0625rem / 17px, 1.65): all prose, in Muted Zinc with `strong` lifted to 600 Zinc White. About text caps at 36rem; card descriptions at 0.98rem.
+- **Label** (550, 0.97rem, -0.005em): buttons and text links (0.95rem). Nav links run 0.92rem at 400.
+- **Mono** (400, 0.72 to 0.86rem, 1.7 to 1.75): editor code (0.86rem), terminal (0.82rem), dates (0.78rem), stack lists (0.76rem), tag pills (0.74rem), status bar (0.72rem), marquee (0.95rem).
 
 ### Named Rules
-**The Two Voices Rule.** Bricolage speaks (names, headings, prose, buttons); Martian Mono reports (anything git or a shell would print: hashes, refs, commands, counts, dates, URLs, config keys). Never set a prose sentence in mono, and never set a hash or ref in Bricolage.
+**The Mono Is Machine Rule.** Geist Mono carries code, commands, dates, file names, tech stacks and tags. It never sets a heading or a sentence of prose.
 
-**The Condensed Shout Rule.** Every heading from Title up is weight 800 at 75–80% width with negative tracking and line-height under 1.1. Headings are never light, never wide, never letter-spaced open.
-
-**The Command Subline Rule.** A section heading is followed (never preceded) by the mono git command that would produce it, with a dimmer plain-language gloss after a middle dot: `git diff --stat · quantos dos meus 16 repositórios públicos usam cada coisa`.
+**The Tight Heavy Heading Rule.** Every heading is 600 to 700 with negative tracking (-0.015em for small titles up to -0.04em for display). Body text keeps normal tracking and never goes bold for emphasis beyond 600.
 
 ## Layout
 
-The spatial model is a fixed left rail plus a content column. A 128px gutter (46px at 760px and below) is reserved on every section for the SVG commit graph; all content starts at `padding-left: var(--gutter)` and ends at a fluid right edge of clamp(16px, 4vw, 64px). The fixed nav is 60px tall (54px compact) and hides on scroll down; anchors scroll with a nav-height-plus-16px offset.
+One centered column, max 1160px, with a fluid side gutter of clamp(16px, 4vw, 40px). Sections stack with clamp(88px, 12vw, 140px) of top padding; a section head (title plus lede, max 40rem) sits 48px above its content. The footer sits clamp(80px, 10vw, 120px) below the last section behind a hairline.
 
-Sections breathe vertically at clamp(96px, 14vh, 150px); the contact band opens at clamp(110px, 16vh, 180px). Project articles are a 5fr/7fr grid (text left, sticky screenshot plate right, gap clamp(32px, 5vw, 80px)) that collapses to one column at 960px. "Mais no log" and "O que eu uso" are full-width row tables whose columns fold progressively at 1100px, 960px and 760px. The about section is a 1fr/1fr split (copy and config left, sticky terminal right) with the timeline spanning both columns below.
+- **Hero:** full small-viewport height, two columns (1.12fr text, 1fr editor) with clamp(32px, 5vw, 72px) gap; collapses to one column under 960px with the editor below the text.
+- **Marquee:** full-bleed tech ribbon between hairlines, edge-faded with a mask, 38s loop, pauses on hover.
+- **Projects:** two-column grid with 20px gaps. Wide cards span both columns and split into screenshot plus body (1.25fr / 1fr); the flipped variant mirrors it. The "other projects" list is a two-column grid of rows with 12px gaps. Everything goes single column under 860px.
+- **About:** two equal columns, text and a sticky terminal (top 100px); one column under 900px.
+- **Trajectory:** asymmetric two columns (0.8fr sticky head, 1.4fr timeline); one column under 900px.
+- **Stack:** three equal skill groups, 20px gaps; one column under 860px.
+- **Contact:** one centered panel.
 
-Inner rhythm: 8–12px between inline items (refs, meta), 18–22px between a heading and its first follower, 26–36px before action rows and lists. At 760px the hero centers vertically, its buttons go full width, the screenshot plates tighten, and secondary chrome (nav prompt, HEAD readout, hero hint, Frangão stage chips, the cursor preview) is removed rather than shrunk.
-
-### Named Rules
-**The Rail Gutter Rule.** Nothing but the graph lives in the left gutter. Every section, band and footer indents its content by the gutter so the rail never collides with copy.
-
-**The Breakpoint Ladder Rule.** The system's breakpoints are 1100px (fold wide tables, drop the nav prompt), 960px (single-column projects and about), 760px (compact gutter and nav, mobile hero) and 360px (tightest nav links). New surfaces fold at the same steps.
+Spacing rhythm is small and repeated: 8px between chips and tags, 12px between buttons and stacked rows, 20px between cards, 24px inside panels, 48px under section heads. Breakpoints in use: 400, 520, 760, 860, 900, 960px. On phones the nav keeps only the logo, two or three links and the Contact pill; hero buttons stretch to share the row; contact buttons go full width under 520px.
 
 ## Elevation & Depth
 
-The page is flat; depth belongs only to objects lifted off the printout. Bands and rows have no shadow. Floating objects (screenshot plates, the phone inset, the terminal, the cursor-following preview) share one deep, cobalt-tinted drop shadow, and buttons carry a short contact shadow that deepens on hover. Plates also tilt in 3D toward the pointer (perspective 1200px, rotateX/rotateY driven by `--rx`/`--ry`), which is the only perspective in the system. Layering in the graph comes from the ink casing drawn under each colored stroke, not from shadow.
+A hybrid: surfaces are tonal (graphite steps on black, separated by white-alpha hairlines), and shadows are reserved for floating windows and for state. Shadows are always deep black with a negative spread so they pool beneath an object rather than outlining it, plus an inset 4% white top highlight that gives windows a machined edge. The only colored shadows are indigo glows: around the code editor at rest and around the primary button on hover. Additional depth comes from light: a 640px indigo spotlight follows the cursor across the page, and cards, the editor and the contact panel each carry a radial glow positioned at the pointer.
 
 ### Shadow Vocabulary
-- **Float** (`box-shadow: 0 30px 60px -24px rgba(4, 7, 40, 0.65), 0 12px 24px -12px rgba(4, 7, 40, 0.45)`): plates, phone inset, terminal, preview.
-- **Button rest** (`box-shadow: 0 10px 24px -14px rgba(4, 7, 40, 0.9)`): filled buttons at rest.
-- **Button lift** (`box-shadow: 0 18px 30px -16px rgba(4, 7, 40, 0.95)`): filled buttons on hover, paired with a 2px rise.
+- **Window** (`box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 24px 60px -24px rgba(0,0,0,0.7)`): the editor and the terminal, the two floating instruments.
+- **Editor Glow** (`box-shadow: 0 0 80px -30px rgba(124,140,255,0.45)`): added to Window on the hero editor only.
+- **Card Lift** (`box-shadow: 0 30px 60px -30px rgba(0,0,0,0.9)`): project cards on hover, together with a 4px rise.
+- **Nav Float** (`box-shadow: 0 10px 30px -14px rgba(0,0,0,0.8)`): the nav pill once the page has scrolled past 24px, with 14px backdrop blur.
+- **Primary Hover Ring** (`box-shadow: 0 0 0 4px rgba(124,140,255,0.16), 0 10px 30px -10px rgba(124,140,255,0.6)`): the near-white button on hover.
 
 ### Named Rules
-**The Flat Printout Rule.** Sections, bands, list rows and panels inside the flow are flat. A shadow means "this object sits on top of the page", and only plates, the terminal, the preview and buttons qualify.
+**The Flat Until Touched Rule.** Cards, rows and panels are flat at rest. They lift, glow or brighten their border only in response to the pointer. Only the two windows float at rest.
+
+**The Light Follows The Hand Rule.** Glows track the pointer (cards, editor, contact panel, page spotlight) and the editor tilts up to 6 degrees toward it, only on fine pointers and only without reduced motion. Touch and reduced-motion users get the same surfaces, still and complete.
 
 ## Shapes
 
-Two silhouettes dominate: the full pill (999px) for every ref, button, nav link, terminal chip, stage chip and the XP bar; and the generously rounded plate (22px desktop, 16px mobile) that frames screenshots, with its image inset at 12px (9px mobile). Ink panels are softer rectangles: terminal 20px, config 16px, the starred timeline entry 14px, oneline hover fills 12px, stat hover fills 10px. Rails and nodes are round-capped strokes: a 4px colored lane over a 9px ink casing (3px over 6.5px compact), nodes at radius 7 (5 compact) with a 3.5px ink stroke. Rules are 1px dashed hairlines on cobalt, 1.5px solid ink at 14% on light bands, and 2px solid ink in the contact link list.
+Soft, consistent, concentric. Containers use a 20px panel radius (cards, windows, skill groups); inner frames step down to 12px so the screenshot sits concentrically inside its 12px-inset card; list rows and about cards use 16px. Every control is a full pill (999px): buttons, nav bar, nav links, chips, tags, the status badge. The contact panel alone opens up to 28px. Small square-ish tiles (nav logo) use 10px, and the focus ring rounds to 8px. Borders are always 1px white-alpha hairlines; there are no thick strokes, no hard corners, no clipped or angled silhouettes. Round marks recur as a motif: window dots, timeline nodes, the status dot, marquee separators.
 
 ## Components
 
 ### Buttons
-Tactile pills that fill from the bottom up.
-- **Shape:** full pill (999px), minimum 52px tall, 2px border in the fill color, padding 0.85em 1.4em, icon gap 0.6em.
-- **Primary:** yolk fill, ink text, button-rest shadow.
-- **Hover / Focus:** a chalk layer sweeps up from below (`translateY(102%)` to 0, 0.45s), the button rises 2px with the lift shadow, the trailing arrow nudges up-right 2px; pressed state scales to 0.98. Focus is the global 2.5px yolk outline at 3px offset.
-- **Ghost:** transparent with a 55% chalk border and chalk text; the chalk sweep turns the text ink.
-- **Lane:** the project's lane color as fill, ink text, chalk sweep. One per project, always "Ver o site / Abrir o app / Jogar agora".
-- **Ink / Outline (on ember):** ink fill with a lighter-cobalt sweep, and transparent with an ink border and an ink sweep. Used as the pair on the contact band.
-- **Text link:** Bricolage 600, chalk, underline at 35% chalk that turns to the lane (or yolk) on hover; paired with a lane button as the secondary "Código no GitHub".
+Confident pills; near-white leads, translucent follows.
+- **Shape:** full pill (999px), min height 46px, 0 1.25rem padding; small variant 38px tall at 0.9rem.
+- **Primary:** Zinc White fill, Deep Black text, Label type, optional trailing arrow icon.
+- **Hover / Focus:** primary brightens to pure white and gains the Primary Hover Ring; the trailing icon slides 3px right; press scales to 0.97. Focus shows a 2px indigo outline at 3px offset. Transitions 0.25 to 0.35s on the house ease.
+- **Ghost:** 3% white fill, Strong Hairline border, Zinc White text; hover raises the fill to 8% and the border to 28% white. Used for the second action and for "copy e-mail", which swaps its icon to a check and its label to "Copiado!" for 2.2s.
 
-### Ref pills (signature)
-Git decorations as UI. Mono, 0.72rem, pill, 1.5px border in currentColor. **HEAD** is yolk-filled, **lane** refs are lane-filled, **open-to-work** is mint-filled, all with ink text at 700; remote refs (`origin/main`) are outline only. A ref always sits beside a yolk hash in a mono meta line.
+### Text Links
+- **Style:** Label type, Zinc White, trailing 1em icon (arrow, play or GitHub mark). A 1px underline wipes in from left to full width on hover (0.35s). Muted variant starts in Muted Zinc and brightens on hover. Used as the "Visit / Code" pair at the foot of every project card.
 
-### Commit rail and HEAD marker (signature)
-A fixed-gutter SVG drawn from the DOM: a chalk `main` rail, colored project lanes that curve out at the project title and back at the merge line, nodes that scale in from 0 as they are reached, and a yolk HEAD node with a pulsing ring. A yolk marker with an ink-outlined `HEAD` tag follows the scroll position along whichever lane is current, while the nav's `HEAD → …` readout names the current section's ref. Log lines ahead of HEAD sit at 22% opacity, shifted 6px left, and light up as HEAD passes.
+### Chips
+- **Style:** pill, 6px 12px, 0.88rem, Muted Zinc on 3% white with a Hairline border.
+- **State:** hover turns text Zinc White, border Electric Indigo, fill Indigo Wash, and lifts 2px. Terminal suggestion chips are the same shape in Geist Mono at 0.76rem with a Strong Hairline border, and run their command when pressed.
 
-### Screenshot plate
-A lane-colored frame (22px radius, 12px side and bottom padding) with a mono ink URL bar on top and the screenshot inset at 12px radius on an ink backing. It unrolls top-down via clip-path on entry (1.2s), tilts toward the pointer, and carries the float shadow. A phone screenshot may overlap its lower-right corner at 27% width, rotated 4°, with a 5px ink border. The figure caption below is periwinkle at 0.86rem.
-
-### Log list
-The project feature list as commits: a 1rem column holding a lane-colored mono `+`, then the line at 0.98rem/1.45, separated by 1px dashed hairlines top and bottom.
-
-### Oneline rows (paper band)
-A five-column row (hash, name, description, tech, arrow) between 1.5px ink-14% rules. On hover or focus an ink fill wipes in from the left (`scaleX` 0 to 1, 0.5s), text turns chalk, the ember-deep hash turns yolk, and the arrow nudges up-right. On fine pointers a screenshot preview (340px, 6px ink border, rotated -3°) follows the cursor.
-
-### Stat rows (yolk band)
-A `git diff --stat` table: Title-size name, right-aligned tabular count, a mono bar of mint-deep `+` characters (one per repository) that types in with a 45ms stagger, and a yolk-umber gloss. Hover inverts the row to ink with yolk text and a mint bar.
-
-### Terminal
-An ink panel (20px radius, 1.5px white-8% border, float shadow) with a slightly lifted ink title bar (`bash` in mint, host in periwinkle), a scrolling mono output area, a prompt-led input with a yolk caret, and a row of pill suggestion chips (outline periwinkle, filling yolk on hover). Commands print in yolk behind a mint `visitante@portfolio:~$` prompt; links are sky; errors are a soft red.
+### Cards / Containers
+- **Corner Style:** panel radius (20px); inner screenshot frame 12px, inset 12px from the card edge.
+- **Background:** Graphite card, Raised Graphite screenshot frame with its own Hairline border.
+- **Shadow Strategy:** flat at rest; Card Lift plus a 4px rise on hover (see Elevation & Depth).
+- **Border:** Hairline at rest; on hover a 1px gradient border, masked to the edge, lights up in the card's accent at the pointer position, with a 10% accent wash inside.
+- **Internal Padding:** 22px 24px 24px; wide cards 36px 40px with the body vertically centered.
+- **Anatomy:** 16:10 screenshot (top-aligned, scales to 1.04 on hover over 0.9s), then title, description, a Faint Zinc mono stack list, and the link pair pinned to the bottom. The build also places small mono category pills, tinted in the card's accent, above the title; that placement is carried, not canonized (see Do's and Don'ts).
+- **Other projects row:** a lighter list card, 16px radius, 2% white fill, Hairline border, 18px 20px padding; name, one-line description, mono tech line, and a corner arrow that nudges up-right on hover while the row lifts 2px.
 
 ### Inputs / Fields
-The only field is the terminal input: borderless, transparent, inheriting the mono face, with a yolk caret. Focus is shown on the whole form row as an inset 2px yolk-40% top line.
+- **Style:** the only input is the terminal prompt: transparent, borderless, Geist Mono 0.82rem, Zinc White text, indigo caret, preceded by an indigo "~/murilo $" prompt label.
+- **Focus:** no box; the indigo caret is the focus signal. History on arrow keys, Tab completion.
+- **Error:** unknown commands answer in pale red inside the output, never on the field.
 
 ### Navigation
-A fixed 60px cobalt shell at 94% opacity with a hairline bottom border that slides away on scroll down. Left: the logo mark (two nodes on a forking rail, yolk and ember) and the condensed `murilo` wordmark; then a typed mono prompt `~/portfolio $ git log --graph --all` with a blinking yolk caret. Right: mono section links as pills (periwinkle at rest, 8% white on hover, chalk fill with ink text when current) and the outlined `HEAD → <ref>` readout with a yolk dot. Compact: the wordmark, prompt and readout are removed, links tighten to 0.7rem.
+- **Style:** fixed, 16px from the top, a 60px pill as wide as the content column. Transparent at rest; after 24px of scroll it becomes a 72% Graphite glass pill with 14px blur, a Hairline border and Nav Float.
+- **Brand:** 32px Raised Graphite tile (10px radius, Strong Hairline) holding the indigo code glyph, then the name in 650.
+- **Links:** Muted Zinc 0.92rem pills (8px 14px); hover to Zinc White; the section in view gets a 7% white pill fill and Zinc White text.
+- **Action:** a small primary button, "Contato", closes the bar.
+- **Mobile:** 54px tall, 10px from the top; the name hides behind the logo tile, link padding tightens, Stack drops under 760px and Trajetória under 400px.
 
-### Contact link list
-Full-width rows between 2px ink rules: brand icon, the handle in Bricolage 700 at up to 2.1rem, and a trailing arrow. Hover slides the row 14px right and pushes the arrow up-right.
+### Code Editor Window (signature)
+The hero's right column: a floating Window with Editor Glow and a pointer-following inner light. A 46px title bar holds three traffic-light dots (red, amber, green), a filename tab (8px radius, 6% white) and a faint language label. The body types a JavaScript object describing Murilo line by line, with a blinking indigo block caret, CSS-counter line numbers in Gutter Gray, and a Palenight-style syntax set (keywords lilac, identifiers blue, strings green, numbers orange, functions yellow, comments italic gray). A mono status bar at the foot shows the branch in indigo and the latest public GitHub push. Tilts up to 6 degrees toward the pointer.
 
-### Motion
-One easing for everything, `cubic-bezier(0.16, 1, 0.3, 1)` (a fast-out, long-settle curve). State changes run 0.25–0.6s; entrances run 0.9–1.2s with staggered delays (the hero name rises line by line, then meta, message, refs, actions and status follow from 0.45s to 1s). Ambient loops are limited to the caret blink, the HEAD ring, the status pulse and the Frangão mascot hop. Under `prefers-reduced-motion` every animation and transition collapses, all hidden-until-reached content is shown, and the hero canvas stops ticking.
+### Terminal Window (signature)
+Same window family as the editor, on a slightly darker body: a 44px bar with dots and a "terminal" label, a 300px scrolling output in Geist Mono 0.82rem (commands prefixed by the indigo prompt, dim lines in Faint Zinc, links underlined in indigo), the prompt input, and a row of suggestion chips. It types its first command by itself when it scrolls into view. Sticky beside the about text on desktop.
+
+### Status Badge
+A pill with an 8% green fill, a 25% green border and pale-green 0.88rem text, led by an 8px Signal Green dot that pings outward every 2s. Used once per page for availability; it is the only green UI element.
+
+### Timeline
+A 2px Strong Hairline rail with an indigo-to-cyan fill that scales down the rail with scroll progress. Each entry has a 16px hollow node that turns indigo with an Indigo Wash halo as it reveals; a mono Faint Zinc date; a 600 title; a Muted Zinc line. The one starred entry gets a solid Trophy Gold node and a gold title.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep the page on Cobalt Ground (#141d8a) and switch section grounds only to full-bleed Paper, Yolk or Ember bands.
-- **Do** give every new project exactly one lane color from the six-color set (ember, yolk, mint, pink, sky, lilac) and route it through `--lane` to its rail, nodes, ref, `+` marks, plate and button.
-- **Do** set ink (#0a0f3d) text on every yolk, ember, paper, mint and lane-colored fill.
-- **Do** indent all content by the gutter (128px, 46px at 760px and below) so the commit rail stays clear.
-- **Do** follow every section heading with its mono git command subline, and put hashes and refs in Martian Mono at 87.5% width.
-- **Do** use the single easing `cubic-bezier(0.16, 1, 0.3, 1)` and make every reveal print, light up or unroll; provide a reduced-motion path that shows the final state.
-- **Do** keep mono labels at 0.7rem or larger.
+- **Do** keep the ground Deep Black and build depth with the two graphite steps and 8% / 14% white hairlines.
+- **Do** use Electric Indigo for light, focus and emphasis only: focus rings, carets, prompts, glows, active states, one short line of hero text.
+- **Do** make the near-white pill the primary action and the translucent hairline pill the secondary.
+- **Do** show every project as a real screenshot (or a live animated piece of the product) in a 16:10 frame inside a 20px Graphite card, with a "visit" link and a "code" link.
+- **Do** reassign the accent per project card to that project's own hue, one hue per card.
+- **Do** set code, dates, file names, stacks and commands in Geist Mono; everything else in Geist.
+- **Do** use the house ease (cubic-bezier(0.16, 1, 0.3, 1)): 0.2 to 0.35s for state, 0.5 to 0.9s for lifts and reveals, with reveals combining fade, a 24px rise and a 4px blur clearing, staggered 0.08s.
+- **Do** collapse every animation, typing effect and pointer effect to its finished state under prefers-reduced-motion, and gate pointer effects to fine pointers.
+- **Do** keep focus visible: 2px indigo outline, 3px offset.
 
 ### Don't:
-- **Don't** put the page on black or near-black, or build "black terminal + glowing cards"; the direction contract refuses it.
-- **Don't** add glows, neon text-shadows, glassmorphism or gradient fills; the only gradient in the system is the hero's legibility veil.
-- **Don't** give a project two lane colors, or use a lane color outside its own project article.
-- **Don't** spend yolk on decoration; it means HEAD, primary action and focus.
-- **Don't** put shadows on bands, list rows or in-flow panels; only plates, the terminal, the preview and buttons float.
-- **Don't** set prose in mono or hashes and refs in Bricolage.
-- **Don't** set light-band accent text in the bright accent; use the deep variant (ember-deep on paper, mint-deep or yolk-umber on yolk).
-- **Don't** place anything but the graph in the left gutter.
+- **Don't** fill buttons, cards or sections with Electric Indigo; it is a light, not a paint.
+- **Don't** add a light theme or light sections; the system is dark-only by the owner's choice.
+- **Don't** use Trophy Gold or Signal Green outside achievement and availability.
+- **Don't** put two accent hues in one card or let a project hue leak outside its card.
+- **Don't** set headings or prose in Geist Mono, or body text in weights above 600.
+- **Don't** use hard offset, colored-outline or light-colored drop shadows; shadows are deep black with negative spread, plus the two indigo glows named above.
+- **Don't** add square corners or thick borders; containers are 16 to 20px, controls are pills, borders are 1px hairlines.
+- **Don't** set readable text in Gutter Gray or Separator Graphite.
+- **Don't** put a label, kicker or eyebrow above section titles; a section head is title plus lede. The category pills above project-card titles are a carried exception in the current build, not a pattern to repeat on new surfaces.
+- **Don't** bring back the discarded "git log graph on cobalt" world: no cobalt ground, no commit-graph layout.
